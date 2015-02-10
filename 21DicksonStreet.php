@@ -12,51 +12,6 @@ Template Name: 21DicksonStreet
   <li><a href="http://apartmentclub.localhost/#features-adjust1">Properties</a></li><img src="<?php echo get_template_directory_uri(); ?>/images/demo/breadcrumbicon.png"/>
   <li class="active">21DicksonStreet</li>
 </ol>
-
-<div>
-    <p>Specification:</p>
-    <div class="table-responsive">
-        <table class="table table-bordered table-hover">
-            <tbody>
-                <tr><th>Sleeps</th><td>5</td></tr>
-                <tr><th>Bedrooms</th><td>2</td></tr>
-                <tr><th>Bathrooms</th><td>1</td></tr>
-                <tr><th>Property Type</th><td>House</td></tr>
-                <tr><th>Minimum Stay</th><td>5 nights</td></tr>
-            </tbody>
-        </table>
-    </div>
-</div>
-
-<div>
-    <p>Features List</p>
-    <div class="table-responsive">
-        <table class="table table-bordered table-hover">
-            <tbody>
-                <tr>
-                    <th>Dining</th><td>Dining Area</td></tr>
-                    <tr><th>Bathroom</th>
-                    <td>
-                        <p>1 Bathroom</p>
-                        <p>Bathroom 1- toilet, shower enclosure</p>
-                    </td>
-                </tr>
-
-                <tr>
-                    <th>Bedrooms</th>
-                    <td>
-                        <p>2 Bedrooms, Sleeps 5</p>
-                        <p>Bedroom 1 - 1 double bed</p>
-                        <p>Bedroom 2 - 1 double bed</p>
-                    </td>
-                </tr>
-
-            </tbody>
-        </table>
-    </div>
-
-</div>
-
 -->
 <div class="container" id="container" style="margin-bottom: 0.3em; margin-top:-1.3em;">
 <div class="sub-container"> <!-- For aligning in the center -->
