@@ -37,11 +37,6 @@ Reset
     margin-top:0.1em;
 }
 
-.sections{
-    background-color: #f7f3fb;
-    margin-top: 0.2em;
-}
-
 /*
     The width in sub-container was 80% previously. when adding aside make it 80% again.
     Just temporarily 100% for now.
@@ -57,6 +52,11 @@ Reset
 .common{
     margin-top:1.2em;
     border-top:0.2em solid white;
+}
+
+.sections{
+    background-color: #f7f3fb;
+    margin-top: 0.2em;
 }
 
 /* Bottom and across */
@@ -957,7 +957,7 @@ Slider
 /*--------------------------------------------------------------
 HEADER
 --------------------------------------------------------------*/
-
+/* #1489a6 */
 header.site-header {
 	box-shadow: 0 0 6px rgba(0,0,0,0.3);
     /*border-top: 5px solid #23a38f;*/
@@ -1078,10 +1078,13 @@ header.site-header {
 #site-navigation .menu > ul > li{
 	float: left;
 }
+
+/*navigation words color change */
 #site-navigation .menu > ul > li > a{
     border-left: 1px solid #ececec;
     /*color: #23a38f;*/
-	color: #B40404;
+	/*color: #B40404;*/
+    color:#1489a6;
     display: inline-block;
     font-size: 16px;
     font-weight: 300;
@@ -1118,8 +1121,10 @@ header.site-header {
 /*** SUB-MENU ****/
 #site-navigation .menu ul ul{
 	background: none repeat scroll 0 0 #fff;
-    border-bottom: 2px solid #23a38f;
-    border-top: 2px solid #23a38f;
+    /*border-bottom: 2px solid #23a38f;*/
+    /*border-top: 2px solid #23a38f;*/
+    border-bottom: 2px solid #1489a6;
+    border-top: 2px solid #1489a6;
     box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
     display: none;
     left: 0;
@@ -1139,12 +1144,14 @@ header.site-header {
     line-height: 20px;
     margin: 0 !important;
     text-align: left;
+
 }
 #site-navigation .menu ul ul li:last-child{
 	border-bottom: none;
 }
 #site-navigation .menu ul ul li a{
-	color: #666;
+	/*color: #666;*/
+    color:#1489a6;
     display: block;
     font-weight: 300;
     min-width: 220px;
@@ -1153,7 +1160,8 @@ header.site-header {
 }
 #site-navigation .menu ul ul li > a:hover:before,
 #site-navigation .menu ul ul li.current_page_item > a:before{
-    background: #f0563d;
+    /*background: #f0563d;*/
+    background:#1489a6;
     content: "";
     height: 2px;
     left: 0;
@@ -1690,7 +1698,8 @@ FEATURED-POST
 
 }
 .featured-section .featured-post {
-    background: none repeat scroll 0 0 #23a38f;
+    /*background: none repeat scroll 0 0 #23a38f;*/
+    background: none repeat scroll 0 0 rgba(20, 137, 166, 0.7);
     color: #ffffff;
     float: left;
     font-size: 14px;
