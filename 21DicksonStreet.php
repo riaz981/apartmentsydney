@@ -31,15 +31,15 @@ Template Name: 21DicksonStreet
             </section><!-- #slider-banner closes-->
             </div>
             <!--Need to remove style="margin-left:0.3em; once we have a left column -->
-            <div class="row common shadows" style="margin-left:0.3em;">
-                <div class="col-lg-12 sections">
+            <div class="row  common" style="margin-left:0.3em;">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 shadows sections">
                     <h4>Rates</h4>
                 </div>
             </div>
 
             <!-- Tabs start here -->
-            <div class="row  common shadows" style="margin-left:0.3em;">
-                <div class="col-lg-12 sections">
+            <div class="row  common" style="margin-left:0.3em;">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 shadows sections">
                     <h4>Overview</h4>
                     <p>Bronte Bliss Beach House is a lovely 2 bedroom semi 5 minutes walk to the beach</p>
 
@@ -57,8 +57,8 @@ Template Name: 21DicksonStreet
                 </div> <!-- Div containing overview closes -->
             </div> <!-- container div for Overview closes -->
 
-            <div class="row  common shadows" style="margin-left:0.3em;">
-                <div class="col-lg-12 sections">
+            <div class="row  common" style="margin-left:0.3em;">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 shadows sections">
               	     <h4>Specifications:</h4>
                      <div class="table-responsive">
                        <table class="table table-bordered table-hover">
@@ -120,8 +120,8 @@ Template Name: 21DicksonStreet
                     </div> <!-- Sprecification div closes -->
                 </div> <!-- Container div for specification closes -->
 
-            <div class="row  common shadows" style="margin-left:0.3em;">
-                <div class="col-lg-12 sections">
+            <div class="row  common" style="margin-left:0.3em;">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 shadows sections">
                 <div class="table-responsive">
                 <table class="table table-bordered table-hover">
                     <h4>Features List:</h4>
@@ -157,8 +157,8 @@ Template Name: 21DicksonStreet
 
 
 
-            <div class="row  common" style="margin-left:0.3em;">
-                <div class="col-lg-12 sections">
+            <div class="row  common" style="margin-left:0.3em; margin-bottom:0.1em;">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 shadows sections">
                 <h3>Map:</h3>
                     <div id="google-map">
                         <div id="ap-map-canvas">
