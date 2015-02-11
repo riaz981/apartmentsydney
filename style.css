@@ -23,15 +23,23 @@ Reset
     src: url('css/fonts/Questrial-Regular.ttf');
 }
 
-/* This bit I added myself for the property page */
+/***** This bit I added myself for the property page *****/
+
+.breadcrumbtop{
+    margin-left:-0.6em;
+    width: 100%;
+}
 
 #container{
     background-color: #D3D3D3;
     width: 100%;
+    margin-bottom: 0.3em;
+    margin-top:-1.3em;
 }
 
+/* The width in sub-container was 80% previously. when adding aside make it 80% again. Just temporarily 100% for now. */
 .sub-container{
-    width:90%;
+    width:100%;
     margin-left:auto;
     margin-right:auto;
     margin-top:3em;
@@ -42,8 +50,14 @@ Reset
     border-top:0.2em solid white;
 }
 
-.shadows{
+/* Bottom and across */
+.shadowsslide{
     box-shadow: 10px 10px 5px #888888;
+}
+
+/* Bottom only */
+.shadows{
+    box-shadow: 0 10px 5px -5px #888888;
 }
 
 
