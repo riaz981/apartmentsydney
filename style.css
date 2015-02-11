@@ -37,7 +37,11 @@ Reset
     margin-top:-1.3em;
 }
 
-/* The width in sub-container was 80% previously. when adding aside make it 80% again. Just temporarily 100% for now. */
+/*
+    The width in sub-container was 80% previously. when adding aside make it 80% again.
+    Just temporarily 100% for now.
+*/
+
 .sub-container{
     width:100%;
     margin-left:auto;
