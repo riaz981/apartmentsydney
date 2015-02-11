@@ -6,15 +6,16 @@ Template Name: 21DicksonStreet
 
 <?php get_header(); ?>
 <div class="container" id="container">
-<div  class="breadcrumbtop">
-<ol class="breadcrumb shadows">
-  <li><a href="http://apartmentclub.localhost">Home</a></li><img src="<?php echo get_template_directory_uri(); ?>/images/demo/breadcrumbicon.png"/>
-  <li><a href="http://apartmentclub.localhost/#features-adjust1">Properties</a></li><img src="<?php echo get_template_directory_uri(); ?>/images/demo/breadcrumbicon.png"/>
-  <li class="active">21DicksonStreet</li>
-</ol>
-</div>
 
-<div class="sub-container"> <!-- For aligning in the center -->
+    <div  class="breadcrumbtop">
+    <ol class="breadcrumb shadows">
+      <li><a href="http://apartmentclub.localhost">Home</a></li><img src="<?php echo get_template_directory_uri(); ?>/images/demo/breadcrumbicon.png"/>
+      <li><a href="http://apartmentclub.localhost/#features-adjust1">Properties</a></li><img src="<?php echo get_template_directory_uri(); ?>/images/demo/breadcrumbicon.png"/>
+      <li class="active">21DicksonStreet</li>
+    </ol>
+    </div>
+
+    <div class="sub-container"> <!-- For aligning in the center -->
 
     <!-- Slideshow starts here -->
     <div class="row">
@@ -188,7 +189,7 @@ Template Name: 21DicksonStreet
         </article>
     </div><!-- Row div Closes -->
 
-</div><!-- Sub-container div closes -->
+    </div><!-- Sub-container div closes -->
 </div><!-- Container div closes -->
 <!-- Developed by Riaz Hasan -->
 <?php get_footer(); ?>
