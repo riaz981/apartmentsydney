@@ -5,7 +5,7 @@ Template Name: 21DicksonStreet
 ?>
 
 <?php get_header(); ?>
-
+<div class="container" id="container">
 <div  class="breadcrumbtop">
 <ol class="breadcrumb">
   <li><a href="http://apartmentclub.localhost">Home</a></li><img src="<?php echo get_template_directory_uri(); ?>/images/demo/breadcrumbicon.png"/>
@@ -14,7 +14,8 @@ Template Name: 21DicksonStreet
 </ol>
 </div>
 
-<div class="container" id="container" style="">
+
+
 <div class="sub-container"> <!-- For aligning in the center -->
 
     <!-- Slideshow starts here -->
