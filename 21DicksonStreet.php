@@ -13,6 +13,7 @@ Template Name: 21DicksonStreet
   <li class="active">21DicksonStreet</li>
 </ol>
 </div>
+
 <div class="container" id="container" style="">
 <div class="sub-container"> <!-- For aligning in the center -->
 
@@ -100,9 +101,10 @@ Template Name: 21DicksonStreet
                             <tr>
                                 <th class="text-nowrap col-md-3" scope="row">Local Services &amp Businesses</th>
                                 <td>
-                                    <p>beach combing, scenic drives</p>
-                                    <p>paddle boating, walking</p>
-                                    <p>photography, whale watching</p>
+                                    <p>ATM/bank, hospital</p>
+                                    <p>Babysitter, laundrette - serviced</p>
+                                    <p>fitness centre, massage therapist</p>
+                                    <p>groceries, medical services</p>
                                 </td>
                             </tr>
                             <tr>
