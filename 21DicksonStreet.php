@@ -38,7 +38,6 @@ Template Name: 21DicksonStreet
                 </div>
             </div>
 
-            <!-- Tabs start here -->
             <div class="row  common" style="margin-left:0.3em;">
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 shadows sections">
                     <h4>Overview</h4>
@@ -155,8 +154,6 @@ Template Name: 21DicksonStreet
                 </div> <!-- responsive table closes -->
                 </div> <!-- Sprecification div closes -->
             </div> <!-- Container div for specification closes -->
-
-
 
             <div class="row  common" style="margin-left:0.3em; margin-bottom:0.1em;">
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 shadows sections">
