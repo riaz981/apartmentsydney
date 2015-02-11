@@ -7,7 +7,7 @@ Template Name: 21DicksonStreet
 <?php get_header(); ?>
 <div class="container" id="container">
 <div  class="breadcrumbtop">
-<ol class="breadcrumb">
+<ol class="breadcrumb shadows">
   <li><a href="http://apartmentclub.localhost">Home</a></li><img src="<?php echo get_template_directory_uri(); ?>/images/demo/breadcrumbicon.png"/>
   <li><a href="http://apartmentclub.localhost/#features-adjust1">Properties</a></li><img src="<?php echo get_template_directory_uri(); ?>/images/demo/breadcrumbicon.png"/>
   <li class="active">21DicksonStreet</li>
