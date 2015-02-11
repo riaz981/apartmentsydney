@@ -652,25 +652,25 @@ function accesspress_ray_bxsliderDickson(){
 			</div>
 
 			<div class="slides">
-				<img src="<?php echo get_template_directory_uri(); ?>/images/demo/3_dickson.jpg" class="img-responsive"alt="slider2">
+				<img src="<?php echo get_template_directory_uri(); ?>/images/demo/3_dickson.jpg" class="img-responsive"alt="slider3">
 				<div class="ak-container">
 				</div>
 			</div>
 
 			<div class="slides">
-				<img src="<?php echo get_template_directory_uri(); ?>/images/demo/4_dickson.jpg" class="img-responsive"alt="slider2">
+				<img src="<?php echo get_template_directory_uri(); ?>/images/demo/4_dickson.jpg" class="img-responsive"alt="slider4">
 				<div class="ak-container">
 				</div>
 			</div>
 
 			<div class="slides">
-				<img src="<?php echo get_template_directory_uri(); ?>/images/demo/5_dickson.jpg" class="img-responsive"alt="slider2">
+				<img src="<?php echo get_template_directory_uri(); ?>/images/demo/5_dickson.jpg" class="img-responsive"alt="slider5">
 				<div class="ak-container">
 				</div>
 			</div>
 
 			<div class="slides">
-				<img src="<?php echo get_template_directory_uri(); ?>/images/demo/6_dickson.jpg" class="img-responsive"alt="slider2">
+				<img src="<?php echo get_template_directory_uri(); ?>/images/demo/6_dickson.jpg" class="img-responsive"alt="slider6">
 				<div class="ak-container">
 				</div>
 			</div>
