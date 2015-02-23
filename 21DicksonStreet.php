@@ -57,6 +57,13 @@ Template Name: 21DicksonStreet
             <div class="row  common" style="margin-left:0.3em;">
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 shadows sections">
                     <h4>Rates</h4>
+                    <?php
+
+                        global $wpdb;
+                        $result = $wpdb->get_results('Select * from wp_property;',OBJECT);
+                        var_dump($result);
+
+                    ?>
                 </div>
             </div>
 
