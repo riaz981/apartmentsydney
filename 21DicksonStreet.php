@@ -36,6 +36,8 @@ Template Name: 21DicksonStreet
             <div class="row  common" style="margin-left:0.3em;">
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 shadows sections">
                     <div style="margin-top:0.2em;">
+                        <h3>Bronte Bliss Beach House,</h3>
+                        <h4>Bronte, NSW, Australia </h4>
                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
                             <img src="<?php echo get_template_directory_uri(); ?>/images/demo/home.png" align="middle"/><h5>Whole Apartment</h5>
                         </div>
