@@ -58,11 +58,12 @@ Template Name: 21DicksonStreet
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 shadows sections">
                     <h4>Rates</h4>
                     <?php
-
                         global $wpdb;
-                        $result = $wpdb->get_results('Select * from wp_property;',OBJECT);
-                        var_dump($result);
-
+                        $result = $wpdb->get_row('Select * from wp_property where id=1;',OBJECT);
+                        echo "Id is: ".$result->id."<br>";
+                        echo "Name is: ".$result->name."<br>";
+                        echo "Address is: ".$result->address."<br>";
+                        echo "Table: ".$result->table1;
                     ?>
                 </div>
             </div>
