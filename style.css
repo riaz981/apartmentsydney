@@ -24,7 +24,7 @@ Reset
     src: url('css/fonts/Questrial-Regular.ttf');
 }
 
-/***** This bit I added myself for the property page *****/
+/***** Breadcrumb added at the top of the page *****/
 
 .breadcrumbtop{
     margin-left:-0.6em;
