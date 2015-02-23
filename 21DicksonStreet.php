@@ -31,6 +31,26 @@ Template Name: 21DicksonStreet
                 </div>
             </section><!-- #slider-banner closes-->
             </div>
+
+            <!-- This section is for icons home, users, bedrooms and beds -->
+            <div class="row  common" style="margin-left:0.3em;">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 shadows sections">
+                    <div style="margin-top:0.2em;">
+                        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+                            <img src="<?php echo get_template_directory_uri(); ?>/images/demo/home.png" align="middle"/><h5>Whole Apartment</h5>
+                        </div>
+                        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+                            <img src="<?php echo get_template_directory_uri(); ?>/images/demo/users.png" align="middle"/><h5>4 Guests</h5>
+                        </div>
+                        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+                            <img src="<?php echo get_template_directory_uri(); ?>/images/demo/bedrooms.png" align="middle"/><h5>2 Bedrooms</h5>
+                        </div>
+                        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+                            <img src="<?php echo get_template_directory_uri(); ?>/images/demo/beds.png" align="middle"/><h5>3 Beds</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
             <!--Need to remove style="margin-left:0.3em; once we have a left column -->
             <div class="row  common" style="margin-left:0.3em;">
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 shadows sections">
