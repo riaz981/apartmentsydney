@@ -57,14 +57,54 @@ Template Name: 21DicksonStreet
             <div class="row  common" style="margin-left:0.3em;">
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 shadows sections">
                     <h4>Rates</h4>
-                    <?php
-                        global $wpdb;
-                        $result = $wpdb->get_row('Select * from wp_property where id=1;',OBJECT);
-                        echo "Id is: ".$result->id."<br>";
-                        echo "Name is: ".$result->name."<br>";
-                        echo "Address is: ".$result->address."<br>";
-                        echo "Table: ".$result->table1;
-                    ?>
+                    <div class="table-responsive">
+                      <table class="table table-bordered table-hover">
+                          <tbody>
+                              <tr>
+                                <th class="text-nowrap col-md-3" scope="row">Weekly Price</th>
+                                <td>A$ 1800</td>
+                              </tr>
+                              <tr>
+                                <th class="text-nowrap col-md-3" scope="row">Monthly Price</th>
+                                <td>
+                                    A$7000
+                                </td>
+                             </tr>
+                             <tr>
+                                <th class="text-nowrap col-md-3" scope="row">Cleaning Fee</th>
+                                <td>
+                                    A$50
+                                </td>
+                            </tr>
+                          </tbody>
+                      </table>
+                    </div>
+
+                    <div class="col-lg-12" style="margin-bottom:0.5em;">
+                        <button type="button" class="btn btn-success" value="Book">Book</button>
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal" value="Enquire">Enquire</button>
+                    </div>
+
+                    <!-- Modal -->
+                        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                          <div class="modal-dialog">
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                <h4 class="modal-title" id="myModalLabel">Please fill the form:</h4>
+                              </div>
+                              <div class="modal-body">
+                                ...
+                              </div>
+                              <div class="modal-footer">
+                                <button type="button" class="btn btn-success">Submit</button>
+                                <button type="button" class="btn btn-warning" data-dismiss="modal">Cancel</button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                    <!-- Modal Ends -->
+
                 </div>
             </div>
 
