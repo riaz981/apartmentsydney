@@ -9,6 +9,7 @@ Text Domain: accesspress_ray
 License: GNU General Public License, version 3 (GPLv3)
 License URI: http://www.gnu.org/licenses/gpl-3.0.txt
 Tags: blue, white, light, custom-menu, one-column, two-columns, three-columns, left-sidebar, right-sidebar, fixed-layout, fluid-layout, custom-background, featured-image-header, sticky-post, theme-options, threaded-comments, featured-images, full-width-template, custom-header, flexible-header, responsive-layout
+Modified further by Riaz Hasan during modification and development of website that is now uploaded.
 
 AccessPress Ray WordPress Theme, Copyright 2014 http://accesspressthemes.com/
 AccessPress Ray is distributed under the terms of the GNU GPL
@@ -71,7 +72,7 @@ Reset
 
 
 
-/* Above bit I added */
+/* Above done by Riaz Hasan */
 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -2196,3 +2197,5 @@ Galleries
 	text-align: center;
 	font-size: 20px;
 }
+
+/* CSS has been further modified by Riaz Hasan */
