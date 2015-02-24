@@ -31,7 +31,7 @@ Template Name: 21DicksonStreet
                 </div>
             </section><!-- #slider-banner closes-->
             </div>
-
+            
             <!-- This section is for icons home, users, bedrooms and beds -->
             <div class="row  common" style="margin-left:0.3em;">
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 shadows sections">
@@ -53,6 +53,7 @@ Template Name: 21DicksonStreet
                     </div>
                 </div>
             </div>
+
             <!--Need to remove style="margin-left:0.3em; once we have a left column -->
             <div class="row  common" style="margin-left:0.3em;">
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 shadows sections">

@@ -49,10 +49,19 @@ $accesspress_ray_settings = get_option( 'accesspress_ray_options', $accesspress_
 
 		<div id="middle-footer" class="footer-menu">
 			<div class="ak-container">
+				<?php //wp_nav_menu( array( 'theme_location' => 'secondary' ) );
+				  //var_dump(wp_nav_menu( array( 'theme_location' => 'primary' ) ))?>
+				<a href="http://apartmentclub.localhost/" style="color:white;">Home</a> | <a href="http://apartmentclub.localhost/#features-adjust1" style="color:white;">Properties</a> | <a href="http://apartmentclub.localhost/?page_id=37" style="color:white;">About Us</a> | <a href="#" style="color:white;">Contact Us</a>
+			</div>
+		</div>
+ 		<?php /*
+		<div id="middle-footer" class="footer-menu">
+			<div class="ak-container">
 				<?php wp_nav_menu( array( 'theme_location' => 'secondary' ) ); 	?>
 			</div>
 		</div>
-
+		*/?>
+		<?php /*
 		<div id="bottom-footer">
 		<div class="ak-container">
 			<div class="footer-wrap clearfix">
@@ -69,7 +78,7 @@ $accesspress_ray_settings = get_option( 'accesspress_ray_options', $accesspress_
 					<?php _e( 'Theme:', 'accesspress_ray' ) ?> <a href="<?php echo esc_url('http://accesspressthemes.com/');?>" title="AccessPress Themes" target="_blank">AccessPress Ray</a>
 				</div><!-- .copyright -->
 			</div><!-- .footer-wrap -->
-
+			*/?>
 			<?php if($accesspress_ray_settings['show_social_footer'] == 0){?>
 			<div class="footer-socials clearfix">
 	            <?php
