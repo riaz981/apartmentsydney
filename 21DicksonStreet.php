@@ -7,7 +7,7 @@ Template Name: 21DicksonStreet
 <?php get_header(); ?>
 <div class="container" id="container">
 
-    <div  class="breadcrumbtop">
+    <div  class="breadcrumbtop" style="margin-bottom:-2em;">
     <ol class="breadcrumb shadows">
       <li><a href="http://apartmentclub.localhost">Home</a></li><img src="<?php echo get_template_directory_uri(); ?>/images/demo/breadcrumbicon.png"/>
       <li><a href="http://apartmentclub.localhost/#features-adjust1">Properties</a></li><img src="<?php echo get_template_directory_uri(); ?>/images/demo/breadcrumbicon.png"/>
@@ -62,7 +62,7 @@ Template Name: 21DicksonStreet
                           <tbody>
                               <tr>
                                 <th class="text-nowrap col-md-3" scope="row">Weekly Price</th>
-                                <td>A$ 1800</td>
+                                <td>A$1800</td>
                               </tr>
                               <tr>
                                 <th class="text-nowrap col-md-3" scope="row">Monthly Price</th>
@@ -86,6 +86,7 @@ Template Name: 21DicksonStreet
                     </div>
 
                     <!-- Modal -->
+
                         <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
                           <div class="modal-dialog">
                             <div class="modal-content">
@@ -104,7 +105,6 @@ Template Name: 21DicksonStreet
                           </div>
                         </div>
                     <!-- Modal Ends -->
-
                 </div>
             </div>
 
@@ -189,6 +189,7 @@ Template Name: 21DicksonStreet
                     </div> <!-- responsive table closes -->
                     </div> <!-- Sprecification div closes -->
                 </div> <!-- Container div for specification closes -->
+
 
             <div class="row  common" style="margin-left:0.3em;">
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 shadows sections">
