@@ -9,6 +9,7 @@
 
 /**
  * Get our wp_nav_menu() fallback, wp_page_menu(), to show a home link.
+ * Further modifications made by Riaz Hasan
  *
  * @param array $args Configuration arguments.
  * @return array
