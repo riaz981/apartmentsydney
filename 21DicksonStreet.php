@@ -112,7 +112,7 @@ Template Name: 21DicksonStreet
                                 </form>
                               </div>
                               <div class="modal-footer">
-                                <button type="button" class="btn btn-success">Submit</button>
+                                <button type="submit" class="btn btn-success">Submit</button>
                                 <button type="button" class="btn btn-warning" data-dismiss="modal">Cancel</button>
                               </div>
                             </div>
