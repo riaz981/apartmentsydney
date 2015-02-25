@@ -96,7 +96,7 @@ Template Name: 21DicksonStreet
                                 <h4 class="modal-title headColor" id="myModalLabel">Please fill the form:</h4>
                               </div>
                               <div class="modal-body">
-                                <form>
+                                <form action="">
                                     <div class="form-group">
                                         <label for="email">Email Address</label>
                                         <input type="email" class="form-control" id="email" placeholder="Enter email">
@@ -107,18 +107,20 @@ Template Name: 21DicksonStreet
                                     </div>
                                     <div class="form group">
                                         <label for="comment">Enquiry:</label>
-                                        <textarea style="width:100%" class="form-control" id="comment"></textarea>
+                                        <textarea style="width:100%" class="form-control" id="comment" placeholder="Enter your query"></textarea>
                                     </div>
-                                </form>
                               </div>
                               <div class="modal-footer">
                                 <button type="submit" class="btn btn-success">Submit</button>
-                                <button type="button" class="btn btn-warning" data-dismiss="modal">Cancel</button>
+                                <button type="reset" class="btn btn-warning">Reset</button>
+                                <button type="button" class="btn btn-danger" data-dismiss="modal">Cancel</button>
                               </div>
+                            </form>
                             </div>
                           </div>
                         </div>
                     <!-- Modal Ends -->
+
                 </div>
             </div>
 
