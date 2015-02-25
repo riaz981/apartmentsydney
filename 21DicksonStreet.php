@@ -96,7 +96,20 @@ Template Name: 21DicksonStreet
                                 <h4 class="modal-title" id="myModalLabel">Please fill the form:</h4>
                               </div>
                               <div class="modal-body">
-                                ...
+                                <form>
+                                    <div class="form-group">
+                                        <label for="email">Email Address</label>
+                                        <input type="email" class="form-control" id="email" placeholder="Enter email">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="name">Name</label>
+                                        <input class="form-control" id="name" placeholder="Enter name">
+                                    </div>
+                                    <div class="form group">
+                                        <label for="comment">Enquiry:</label>
+                                        <textarea style="width:100%" class="form-control" id="comment"></textarea>
+                                    </div>
+                                </form>
                               </div>
                               <div class="modal-footer">
                                 <button type="button" class="btn btn-success">Submit</button>
