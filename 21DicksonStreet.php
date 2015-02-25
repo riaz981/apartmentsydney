@@ -15,8 +15,8 @@ Template Name: 21DicksonStreet
     </ol>
     </div>
 
-    <div class="sub-container"> <!-- For aligning in the center -->
 
+    <div class="sub-container"> <!-- For aligning in the center -->
     <!-- Slideshow starts here -->
     <div class="row">
         <!-- Classes for bootstrap to make the article responsive -->
@@ -36,7 +36,7 @@ Template Name: 21DicksonStreet
             <div class="row  common" style="margin-left:0.3em;">
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 shadows sections">
                     <div style="margin-top:0.2em;">
-                        <h3 class="headFour">Bronte Bliss Beach House,</h3>
+                        <h3 class="headColor">Bronte Bliss Beach House,</h3>
                         <h4>Bronte, NSW, Australia </h4>
                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
                             <img src="<?php echo get_template_directory_uri(); ?>/images/demo/home.png" align="middle"/><h5>Whole Apartment</h5>
@@ -57,7 +57,7 @@ Template Name: 21DicksonStreet
             <!--Need to remove style="margin-left:0.3em; once we have a left column -->
             <div class="row  common" style="margin-left:0.3em;">
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 shadows sections">
-                    <h4 class="headFour">Rates</h4>
+                    <h4 class="headColor">Rates</h4>
                     <div class="table-responsive">
                       <table class="table table-bordered table-hover">
                           <tbody>
@@ -111,7 +111,7 @@ Template Name: 21DicksonStreet
 
             <div class="row  common" style="margin-left:0.3em;">
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 shadows sections">
-                    <h4 class="headFour">Overview</h4>
+                    <h4 class="headColor">Overview</h4>
                     <p>Bronte Bliss Beach House is a lovely 2 bedroom semi 5 minutes walk to the beach</p>
 
                     <p>Relax in your own blissful beach house. This semi is set in a great location on a quiet street just 5 minutes walk from the beach.</p>
@@ -130,7 +130,7 @@ Template Name: 21DicksonStreet
 
             <div class="row  common" style="margin-left:0.3em;">
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 shadows sections">
-              	     <h4 class="headFour">Specifications:</h4>
+              	     <h4 class="headColor">Specifications:</h4>
                      <div class="table-responsive">
                        <table class="table table-bordered table-hover">
                            <tbody>
@@ -196,7 +196,7 @@ Template Name: 21DicksonStreet
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 shadows sections">
                 <div class="table-responsive">
                 <table class="table table-bordered table-hover">
-                    <h4 class="headFour">Features List:</h4>
+                    <h4 class="headColor">Features List:</h4>
                     <tbody>
                         <tr>
                           <th class="text-nowrap col-md-3" scope="row">Sleeps</th>
@@ -229,7 +229,7 @@ Template Name: 21DicksonStreet
 
             <div class="row  common" style="margin-left:0.3em; margin-bottom:0.1em;">
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 shadows sections">
-                <h4 class="headFour">Map:</h4>
+                <h4 class="headColor">Map:</h4>
                     <div id="google-map">
                         <div id="ap-map-canvas">
                         </div>
