@@ -1274,7 +1274,8 @@ TOP-FOOTER
 MIDDLE-FOOTER
 -------------------------------*/
 footer #middle-footer{
-	background: #1c8776;
+	/*background: #1c8776;*/
+    background: #1489a6; /* i changed the footer color to match the site custom color */
 	color:#ffffff;
 	font-size: 14px;
 	font-weight: 300;
