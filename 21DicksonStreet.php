@@ -7,7 +7,7 @@ Template Name: 21DicksonStreet
 <?php get_header(); ?>
 <div class="container" id="container">
 
-    <div  class="breadcrumbtop" style="margin-bottom:-2em;">
+    <div  class="breadcrumbtop">
     <ol class="breadcrumb shadows">
       <li><a href="http://apartmentclub.localhost">Home</a></li><img src="<?php echo get_template_directory_uri(); ?>/images/demo/breadcrumbicon.png"/>
       <li><a href="http://apartmentclub.localhost/#features-adjust1">Properties</a></li><img src="<?php echo get_template_directory_uri(); ?>/images/demo/breadcrumbicon.png"/>
@@ -36,7 +36,7 @@ Template Name: 21DicksonStreet
             <div class="row  common" style="margin-left:0.3em;">
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 shadows sections">
                     <div style="margin-top:0.2em;">
-                        <h3>Bronte Bliss Beach House,</h3>
+                        <h3 class="headFour">Bronte Bliss Beach House,</h3>
                         <h4>Bronte, NSW, Australia </h4>
                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
                             <img src="<?php echo get_template_directory_uri(); ?>/images/demo/home.png" align="middle"/><h5>Whole Apartment</h5>
@@ -57,7 +57,7 @@ Template Name: 21DicksonStreet
             <!--Need to remove style="margin-left:0.3em; once we have a left column -->
             <div class="row  common" style="margin-left:0.3em;">
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 shadows sections">
-                    <h4>Rates</h4>
+                    <h4 class="headFour">Rates</h4>
                     <div class="table-responsive">
                       <table class="table table-bordered table-hover">
                           <tbody>
@@ -111,7 +111,7 @@ Template Name: 21DicksonStreet
 
             <div class="row  common" style="margin-left:0.3em;">
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 shadows sections">
-                    <h4>Overview</h4>
+                    <h4 class="headFour">Overview</h4>
                     <p>Bronte Bliss Beach House is a lovely 2 bedroom semi 5 minutes walk to the beach</p>
 
                     <p>Relax in your own blissful beach house. This semi is set in a great location on a quiet street just 5 minutes walk from the beach.</p>
@@ -130,7 +130,7 @@ Template Name: 21DicksonStreet
 
             <div class="row  common" style="margin-left:0.3em;">
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 shadows sections">
-              	     <h4>Specifications:</h4>
+              	     <h4 class="headFour">Specifications:</h4>
                      <div class="table-responsive">
                        <table class="table table-bordered table-hover">
                            <tbody>
@@ -196,7 +196,7 @@ Template Name: 21DicksonStreet
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 shadows sections">
                 <div class="table-responsive">
                 <table class="table table-bordered table-hover">
-                    <h4>Features List:</h4>
+                    <h4 class="headFour">Features List:</h4>
                     <tbody>
                         <tr>
                           <th class="text-nowrap col-md-3" scope="row">Sleeps</th>
@@ -229,7 +229,7 @@ Template Name: 21DicksonStreet
 
             <div class="row  common" style="margin-left:0.3em; margin-bottom:0.1em;">
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 shadows sections">
-                <h3>Map:</h3>
+                <h4 class="headFour">Map:</h4>
                     <div id="google-map">
                         <div id="ap-map-canvas">
                         </div>

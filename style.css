@@ -29,6 +29,7 @@ Reset
 .breadcrumbtop{
     margin-left:-0.6em;
     width: 100%;
+    margin-bottom:-2em;
 }
 
 #container{
@@ -69,7 +70,10 @@ Reset
 .shadows{
     box-shadow: 0 10px 5px -5px #888888;
 }
-
+ /* Headers. Custom color applied to all headers.*/
+ .headFour{
+     color: #1489a6;
+ }
 
 
 /* Above done by Riaz Hasan */
