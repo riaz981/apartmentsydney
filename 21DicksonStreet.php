@@ -26,7 +26,9 @@ Template Name: 21DicksonStreet
             <section id="slider-banner">
                 <div class="slider-wrap">
                     <?php
-                        do_action( 'accesspress_ray_bxsliderD' );
+                        $message = "Hello";
+                        //accesspress_ray_bxsliderDickson($message);
+                        do_action( 'accesspress_ray_bxsliderD',$message );
                     ?>
                 </div>
             </section><!-- #slider-banner closes-->

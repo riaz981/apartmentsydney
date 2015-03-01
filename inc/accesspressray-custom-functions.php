@@ -515,7 +515,8 @@ add_action( 'wp_enqueue_scripts', 'accesspress_ray_scripts' );
 
 /* Customer function for controlling slider for 21DicksonStreet */
 
-function accesspress_ray_bxsliderDickson(){
+function accesspress_ray_bxsliderDickson($message){
+	echo $message;
 	global $accesspress_ray_options, $post;
 	$accesspress_ray_settings = get_option( 'accesspress_ray_options', $accesspress_ray_options );
 	($accesspress_ray_settings['slider_show_pager'] == 'yes1' || empty($accesspress_ray_settings['slider_show_pager'])) ? ($a='true') : ($a='false');
@@ -681,7 +682,7 @@ function accesspress_ray_bxsliderDickson(){
 }
 }
 
-add_action('accesspress_ray_bxsliderD','accesspress_ray_bxsliderDickson', 10);
+add_action('accesspress_ray_bxsliderD','accesspress_ray_bxsliderDickson', 10,1);
 
 /****************************************************************/
 
