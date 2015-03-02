@@ -5,6 +5,11 @@ Template Name: 21DicksonStreet
 ?>
 
 <?php get_header(); ?>
+
+<?php
+
+
+?>
 <div class="container" id="container">
 
     <div  class="breadcrumbtop">
@@ -98,18 +103,18 @@ Template Name: 21DicksonStreet
                                 <h4 class="modal-title headColor" id="myModalLabel">Please fill the form:</h4>
                               </div>
                               <div class="modal-body">
-                                <form action="">
+                                <form method="post" action="http://apartmentclub.localhost/?page_id=59">
                                     <div class="form-group">
-                                        <label for="email">Email Address</label>
-                                        <input type="email" class="form-control" id="email" placeholder="Enter email">
+                                        <label for="emailname">Email Address</label>
+                                        <input type="email" class="form-control" id="emailname" name="emailname" placeholder="Enter email">
                                     </div>
                                     <div class="form-group">
-                                        <label for="name">Name</label>
-                                        <input class="form-control" id="name" placeholder="Enter name">
+                                        <label for="clientname">Name</label>
+                                        <input class="form-control" id="clientname" name="clientname" placeholder="Enter name">
                                     </div>
                                     <div class="form group">
                                         <label for="comment">Enquiry:</label>
-                                        <textarea style="width:100%" class="form-control" id="comment" placeholder="Enter your query"></textarea>
+                                        <textarea style="width:100%" class="form-control" id="comment" name="comment" placeholder="Enter your query"></textarea>
                                     </div>
                               </div>
                               <div class="modal-footer">
