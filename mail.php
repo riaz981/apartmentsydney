@@ -35,15 +35,15 @@ Template Name: mail
     //$mail->addAttachment('/var/tmp/file.tar.gz');         // Add attachments
     //$mail->addAttachment('/tmp/image.jpg', 'new.jpg');    // Optional name
     $mail->isHTML(true);                                    // Set email format to HTML
-    $mail->Subject = 'Test Email. Enquiry from Habitat Travel Group Page';
-    $message = "There has been an enquiry sent through Habitat Travel Group"."<br>";
+    $mail->Subject = 'Test Email. Enquiry from Apartment Sydney.';
+    $message = "There has been an enquiry sent through Apartment Sydney"."<br>";
     $message .= "From: ".$name."<br>";
     $message .= "On: ".date("Y-m-d H:i:s")."<br>";
     $message .= "Email: ".$email."<br>";
     $message .= "Enquiry: ".$comment."<br>";
     $message .= "IP Address: ".$_SERVER["REMOTE_ADDR"]."<br>";
     $mail->Body    = $message;
-    $mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
+    $mail->AltBody = 'HTML email is not enabled. An enquiry has been sent from: '.$name.'. Email is: '.$email.' And the enquiry is: '.$comment;
 
     //checking if name or email is empty. if not empty send email.
     if(!empty($name) || !empty($email))
