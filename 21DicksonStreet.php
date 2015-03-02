@@ -95,14 +95,15 @@ Template Name: 21DicksonStreet
 
                     <!-- Modal -->
 
-                        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-                          <div class="modal-dialog">
+                    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
                             <div class="modal-content">
-                              <div class="modal-header">
-                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                                <h4 class="modal-title headColor" id="myModalLabel">Please fill the form:</h4>
-                              </div>
-                              <div class="modal-body">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                    <h4 class="modal-title headColor" id="myModalLabel">Please fill the form:</h4>
+                                </div>
+
+                            <div class="modal-body">
                                 <form method="post" action="http://apartmentclub.localhost/?page_id=59">
                                     <div class="form-group">
                                         <label for="emailname">Email Address</label>
@@ -116,17 +117,18 @@ Template Name: 21DicksonStreet
                                         <label for="comment">Enquiry:</label>
                                         <textarea style="width:100%" class="form-control" id="comment" name="comment" placeholder="Enter your query"></textarea>
                                     </div>
-                              </div>
-                              <div class="modal-footer">
+                            </div>
+
+                            <div class="modal-footer">
                                 <button type="submit" name="submit" id="submit" class="btn btn-success">Submit</button>
                                 <button type="reset" class="btn btn-warning">Reset</button>
                                 <button type="button" class="btn btn-danger" data-dismiss="modal">Cancel</button>
-                              </div>
-                              <div id="message"></div>
-                            </form>
                             </div>
-                          </div>
+                        <div id="message"></div>
+                               </form>
+                            </div>
                         </div>
+                    </div>
                     <!-- Modal Ends -->
 
                 </div>
@@ -276,6 +278,8 @@ Template Name: 21DicksonStreet
                   }
                   google.maps.event.addDomListener(window, 'load', initialize);
                 </script>
+
+
             </div>
             </div>
         </article>
