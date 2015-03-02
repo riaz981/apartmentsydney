@@ -14,8 +14,6 @@ Template Name: mail
     $email = $_REQUEST['emailname'];
     $comment = $_REQUEST['comment'];
 
-    var_dump($name);
-
     $mail->isSMTP();                                      // Set mailer to use SMTP
     $mail->Host = 'smtp.gmail.com';                    // Specify main and backup SMTP servers
     $mail->SMTPAuth = true;                               // Enable SMTP authentication
@@ -50,15 +48,19 @@ Template Name: mail
     {
         if(!$mail->send())
         {
+            echo "<div class='topandbottom' style='margin-top:1em; margin-left:1em; margin-right:1em; margin-bottom:1em; color:white; background-color:#1489a6;'>";
             echo 'Your message could not be sent.';
             echo 'Mailer Error: ' . $mail->ErrorInfo;
+            echo "</div>";
         }
 
         else
         {
+            echo "<div class='topandbottom' style='margin-top:1em; margin-left:1em; margin-right:1em; margin-bottom:1em; color:white; background-color:#1489a6;'>";
             echo "<br>".'Thank you for emailing us'."<br>";
             echo 'Your message has been sent'."<br>";
             echo 'Someone will get in touch with your shortly';
+            echo "</div>";
         }
 
     }

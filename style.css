@@ -70,6 +70,44 @@ Reset
 .shadows{
     box-shadow: 0 10px 5px -5px #888888;
 }
+
+/*On all sides */
+.allSides {
+
+    width:350px;height:200px;
+    border: solid 1px #555;
+    background-color: #eed;
+    box-shadow: 10px 10px 10px rgba(0,0,0,0.6);
+    -moz-box-shadow: 10px 10px 10px rgba(0,0,0,0.6);
+    -webkit-box-shadow: 10px 10px 10px rgba(0,0,0,0.6);
+    -o-box-shadow: 10px 10px 10px rgba(0,0,0,0.6);
+
+    }
+
+/* Rounded Corner with shadows*/
+.roundedCorner {
+    width:350px;
+    height:200px;
+    border: solid 1px #555;
+    background-color: #eed;
+    box-shadow: 10px -10px 5px rgba(0,0,0,0.6);
+    -moz-box-shadow: 10px -10px 5px rgba(0,0,0,0.6);
+    -webkit-box-shadow: 10px -10px 5px rgba(0,0,0,0.6);
+    -o-box-shadow: 10px -10px 5px rgba(0,0,0,0.6);
+    border-radius:25px;
+    }
+
+/* Top and Bottom */
+.topandbottom {
+    width:350px;
+    height:200px;
+    border: solid 1px #555;
+    background-color: #eed;
+    box-shadow:0px -10px 5px rgba(31, 73, 125, 0.8),0px 10px 5px rgba(31, 73, 125, 0.8);
+    -moz-box-shadow:0px -10px 5px rgba(31, 73, 125, 0.8),0px 10px 5px rgba(31, 73, 125, 0.8);
+    -webkit-box-shadow:0px -10px 5px rgba(31, 73, 125, 0.8),0px 10px 5px rgba(31, 73, 125, 0.8);
+    -o-box-shadow:0px -10px 5px rgba(31, 73, 125, 0.8),0px 10px 5px rgba(31, 73, 125, 0.8);
+    }
  /* Headers. Custom color applied to all headers.*/
  .headColor{
      color: #1489a6;
