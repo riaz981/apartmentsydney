@@ -125,9 +125,9 @@ Template Name: 21DicksonStreet
                                 <button type="button" class="btn btn-danger" data-dismiss="modal">Cancel</button>
                             </div>
                         <div id="message"></div>
-                               </form>
                             </div>
                         </div>
+                            </form>
                     </div>
                     <!-- Modal Ends -->
 
