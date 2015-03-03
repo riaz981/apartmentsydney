@@ -104,14 +104,16 @@ Template Name: 21DicksonStreet
                                 </div>
 
                             <div class="modal-body">
-                                <form method="post" action="http://apartmentclub.localhost/?page_id=59">
+                                <form role="form" data-toggle="validator" method="post" action="http://apartmentclub.localhost/?page_id=59">
                                     <div class="form-group">
                                         <label for="emailname">Email Address</label>
-                                        <input type="email" class="form-control" id="emailname" name="emailname" placeholder="Enter email">
+                                        <input type="email" class="form-control" id="emailname" name="emailname" placeholder="Enter email" data-error="Please enter a valid email address" required>
+                                        <div class="help-block with-errors"></div>
                                     </div>
                                     <div class="form-group">
                                         <label for="clientname">Name</label>
-                                        <input class="form-control" id="clientname" name="clientname" placeholder="Enter name">
+                                        <input class="form-control" id="clientname" name="clientname" placeholder="Enter name" data-error="A name is required" required>
+                                        <div class="help-block with-errors"></div>
                                     </div>
                                     <div class="form group">
                                         <label for="comment">Enquiry:</label>
@@ -124,7 +126,6 @@ Template Name: 21DicksonStreet
                                 <button type="reset" class="btn btn-warning">Reset</button>
                                 <button type="button" class="btn btn-danger" data-dismiss="modal">Cancel</button>
                             </div>
-                        <div id="message"></div>
                             </div>
                         </div>
                             </form>
