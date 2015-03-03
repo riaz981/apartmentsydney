@@ -225,10 +225,12 @@ function accesspress_ray_scripts() {
 	wp_register_script( 'jquery-js', get_template_directory_uri() . '/js/jquery-1.11.2.js', array('jquery'), NULL, true );
 	wp_register_script( 'bootstrap-js', get_template_directory_uri() . '/js/bootstrap.min.js', array('jquery'), NULL, true );
 	wp_register_script( 'respond-js', get_template_directory_uri() . '/js/respond.js', array('jquery'), NULL, true );
+	wp_register_script( 'validator-js', get_template_directory_uri() . '/js/validator.js', array('jquery'), NULL, true );
     wp_register_style( 'bootstrap-css', get_template_directory_uri() . '/css/bootstrap.min.css', false, NULL, 'all' );
 
 	wp_enqueue_script( 'bootstrap-js' );
 	wp_enqueue_script( 'respond-js' );
+	wp_enqueue_script( 'validator-js' );
     wp_enqueue_style( 'bootstrap-css' );
 
 
