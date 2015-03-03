@@ -48,19 +48,19 @@ Template Name: mail
     {
         if(!$mail->send())
         {
-            echo "<div class='topandbottom' style='background-color:#0692BC;'>";
-            echo "<br>"."<div style='margin-top:6em;'><h1 style='text-align: center;weight:bold; color:white;'>Error</h1>";
-            echo "<p style='text-align: center;font-size:20px;color:white;'>Your message could not be sent.</p>";
-            echo "<p style='text-align:center;font-size:20px;color:white;' Mailer Error: ".$mail->ErrorInfo."</p></div>";
+            echo "<div class='topandbottom' style='background-color:#FEFAFA;'>";
+            echo "<br>"."<div style='margin-top:6em;'><h1 style='text-align: center;weight:bold; color:#3C3B3B;'>Error</h1>";
+            echo "<p style='text-align: center;font-size:20px;color:#3C3B3B;'>Your message could not be sent.</p>";
+            echo "<p style='text-align:center;font-size:20px;color:#3C3B3B;' Mailer Error: ".$mail->ErrorInfo."</p></div>";
             echo "</div>";
         }
 
         else
         {
-            echo "<div class='topandbottom' style='background-color:#0692BC;'>";
-            echo "<br>"."<div style='margin-top:6em;'><h1 style='text-align: center;weight:bold; color:white;'>Thank you</h1>";
-            echo "<p style='text-align: center;font-size:20px;color:white;'>Your message has been sent</p>";
-            echo "<p style='text-align:center;font-size:20px;color:white;'>Someone will get in touch with your shortly</p></div>";
+            echo "<div class='topandbottom' style='background-color:#FEFAFA;'>";
+            echo "<br>"."<div style='margin-top:6em;'><h1 style='text-align: center;weight:bold; color:#3C3B3B;'>Thank you</h1>";
+            echo "<p style='text-align: center;font-size:20px;color:#3C3B3B;'>Your message has been sent</p>";
+            echo "<p style='text-align:center;font-size:20px;color:#3C3B3B;'>Someone will get in touch with your shortly</p></div>";
             echo "</div>";
         }
 
