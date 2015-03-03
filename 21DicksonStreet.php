@@ -89,7 +89,7 @@ Template Name: 21DicksonStreet
                     </div>
 
                     <div class="col-lg-12" style="margin-bottom:0.5em;">
-                        <button type="button" class="btn btn-success" value="Book">Book</button>
+                        <button type="button" class="btn btn-primary" value="Book">Book</button>
                         <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal" value="Enquire">Enquire</button>
                     </div>
 
@@ -122,9 +122,9 @@ Template Name: 21DicksonStreet
                             </div>
 
                             <div class="modal-footer">
-                                <button type="submit" name="submit" id="submit" class="btn btn-success">Submit</button>
-                                <button type="reset" class="btn btn-warning">Reset</button>
-                                <button type="button" class="btn btn-danger" data-dismiss="modal">Cancel</button>
+                                <button type="submit" name="submit" id="submit" class="btn btn-primary">Submit</button>
+                                <button type="reset" class="btn btn-primary">Reset</button>
+                                <button type="button" class="btn btn-primary" data-dismiss="modal">Cancel</button>
                             </div>
                             </div>
                         </div>
