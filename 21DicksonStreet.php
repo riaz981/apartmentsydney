@@ -45,17 +45,20 @@ Template Name: 21DicksonStreet
                     <div style="margin-top:0.2em;">
                         <h3 class="headColor">Bronte Bliss Beach House,</h3>
                         <h4>Bronte, NSW, Australia </h4>
-                        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+                        <div class="col-lg-2 col-lg-offset-1 col-md-2 col-sm-2 col-xs-2">
                             <img src="<?php echo get_template_directory_uri(); ?>/images/demo/home.png" align="middle"/><h5>Whole Apartment</h5>
                         </div>
-                        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+                        <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
                             <img src="<?php echo get_template_directory_uri(); ?>/images/demo/users.png" align="middle"/><h5>4 Guests</h5>
                         </div>
-                        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
-                            <img src="<?php echo get_template_directory_uri(); ?>/images/demo/bedrooms.png" align="middle"/><h5>2 Bedrooms</h5>
+                        <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+                            <img src="<?php echo get_template_directory_uri(); ?>/images/demo/bedroom.png" align="middle"/><h5>2 Bedrooms</h5>
                         </div>
-                        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
-                            <img src="<?php echo get_template_directory_uri(); ?>/images/demo/beds.png" align="middle"/><h5>3 Beds</h5>
+                        <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+                            <img src="<?php echo get_template_directory_uri(); ?>/images/demo/bed.png" align="middle"/><h5>3 Beds</h5>
+                        </div>
+                        <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+                            <img src="<?php echo get_template_directory_uri(); ?>/images/demo/minimumstay.png" align="middle"/><h5>5 Nights Min.</h5>
                         </div>
                     </div>
                 </div>
