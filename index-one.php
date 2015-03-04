@@ -241,15 +241,15 @@ $accesspress_ray_show_blog_number = (isset($accesspress_ray_settings['show_blog_
 
 			}else{ ?>
 				<div class="row">
-				<div class="features-adjust col-md-12 col-md-offset-2 col-sm-12 col-sm-offset-2 col-xs-12 col-xs-offset-2" id="features-adjust1">
+				<div class="features-adjust col-md-12 col-offset-md-2 col-sm-12 col-sm-offset-2 col-xs-12 col-xs-offset-2" id="features-adjust1">
 					<div id="featured-post-1" class="featured-post">
 
 						<figure class="featured-image">
-						<a href="#"><img src="<?php echo get_template_directory_uri().'/images/demo/featuredimage-1.jpg' ?>"></a>
+						<a href="http://apartmentclub.localhost/?page_id=47"><img src="<?php echo get_template_directory_uri().'/images/demo/featuredimage-1.jpg' ?>"></a>
 						</figure>
 
 						<div class="featured-content">
-							<h2 class="featured-title"><a href="#">21 Dickson Street</a></h2>
+							<h2 class="featured-title"><a href="http://apartmentclub.localhost/?page_id=47">21 Dickson Street</a></h2>
 							<p>Bronte Bliss Beach House is a lovely 2 bedroom semi 5 minutes walk to the beach. Relax in your own blissful beach house. This semi is set in a great location on a quiet street just 5 minutes walk from the beach...</p>
 
 							<a href="http://apartmentclub.localhost/?page_id=47" class="view-more">Read More</a>
