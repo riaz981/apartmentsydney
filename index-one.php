@@ -240,7 +240,8 @@ $accesspress_ray_show_blog_number = (isset($accesspress_ray_settings['show_blog_
 			<?php }
 
 			}else{ ?>
-				<div class="features-adjust" id="features-adjust1">
+				<div class="row">
+				<div class="features-adjust col-md-12 col-md-offset-2 col-sm-12 col-sm-offset-2 col-xs-12 col-xs-offset-2" id="features-adjust1">
 					<div id="featured-post-1" class="featured-post">
 
 						<figure class="featured-image">
@@ -255,6 +256,9 @@ $accesspress_ray_show_blog_number = (isset($accesspress_ray_settings['show_blog_
 						</div>
 					</div>
 				</div>
+			</div>
+
+				<!--
 
 				<div class="features-adjust" id="features-adjust2">
 					<div id="featured-post-2" class="featured-post">
@@ -271,6 +275,7 @@ $accesspress_ray_show_blog_number = (isset($accesspress_ray_settings['show_blog_
 						</div>
 					</div>
 				</div>
+			-->
 
 			<!-- Dont take this bit out of the code. -->
 			<!--
