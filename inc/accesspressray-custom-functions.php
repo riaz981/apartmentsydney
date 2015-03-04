@@ -644,7 +644,7 @@ function accesspress_ray_bxsliderDickson($message){
 		</script>
 		<div class="bx-slider">
 			<div class="slides">
-				<img src="<?php echo get_template_directory_uri(); ?>/images/demo/1_dickson.jpg" class="img-responsive" alt="slider1">
+				<img src="<?php echo get_template_directory_uri(); ?>/images/demo/1_dickson.jpg" class="img-responsive" style="width:100%" alt="slider1">
 				<?php if($accesspress_ray_settings['slider_caption']=='yes4' || empty($accesspress_ray_settings['slider_caption'])):?>
 				<div class="slider-caption">
 					<div class="ak-container">
@@ -654,31 +654,31 @@ function accesspress_ray_bxsliderDickson($message){
 			</div>
 
 			<div class="slides">
-				<img src="<?php echo get_template_directory_uri(); ?>/images/demo/2_dickson.jpg" class="img-responsive"alt="slider2">
+				<img src="<?php echo get_template_directory_uri(); ?>/images/demo/2_dickson.jpg" class="img-responsive" style="width:100%" alt="slider2">
 				<div class="ak-container">
 				</div>
 			</div>
 
 			<div class="slides">
-				<img src="<?php echo get_template_directory_uri(); ?>/images/demo/3_dickson.jpg" class="img-responsive"alt="slider3">
+				<img src="<?php echo get_template_directory_uri(); ?>/images/demo/3_dickson.jpg" class="img-responsive" style="width:100%" alt="slider3">
 				<div class="ak-container">
 				</div>
 			</div>
 
 			<div class="slides">
-				<img src="<?php echo get_template_directory_uri(); ?>/images/demo/4_dickson.jpg" class="img-responsive"alt="slider4">
+				<img src="<?php echo get_template_directory_uri(); ?>/images/demo/4_dickson.jpg" class="img-responsive" style="width:100%" alt="slider4">
 				<div class="ak-container">
 				</div>
 			</div>
 
 			<div class="slides">
-				<img src="<?php echo get_template_directory_uri(); ?>/images/demo/5_dickson.jpg" class="img-responsive"alt="slider5">
+				<img src="<?php echo get_template_directory_uri(); ?>/images/demo/5_dickson.jpg" class="img-responsive" style="width:100%" alt="slider5">
 				<div class="ak-container">
 				</div>
 			</div>
 
 			<div class="slides">
-				<img src="<?php echo get_template_directory_uri(); ?>/images/demo/6_dickson.jpg" class="img-responsive"alt="slider6">
+				<img src="<?php echo get_template_directory_uri(); ?>/images/demo/6_dickson.jpg" class="img-responsive" style="width:100%" alt="slider6">
 				<div class="ak-container">
 				</div>
 			</div>
