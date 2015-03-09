@@ -72,6 +72,10 @@ Template Name: 21DicksonStreet
                       <table class="table table-bordered table-hover">
                           <tbody>
                               <tr>
+                                <th class="text-nowrap col-md-3" scope="row">Nightly Price</th>
+                                <td>A$300</td>
+                              </tr>
+                              <tr>
                                 <th class="text-nowrap col-md-3" scope="row">Weekly Price</th>
                                 <td>A$1800</td>
                               </tr>
