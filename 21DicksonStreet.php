@@ -73,7 +73,7 @@ Template Name: 21DicksonStreet
                           <tbody>
                               <tr>
                                 <th class="text-nowrap col-md-3" scope="row">Nightly Price</th>
-                                <td>A$300</td>
+                                <td>A$300 (minimum stay of 5 nights)</td>
                               </tr>
                               <tr>
                                 <th class="text-nowrap col-md-3" scope="row">Weekly Price</th>
