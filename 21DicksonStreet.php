@@ -8,11 +8,8 @@ Template Name: 21DicksonStreet
 
 <?php
     $url = $_REQUEST['url'];
-    echo $url;
     $query="Select * from wp_property where url='".$url."'";
-
     $results = array_pop($wpdb->get_results($query));
-    var_dump($results);
 ?>
 <div class="container" id="container">
 
@@ -20,7 +17,7 @@ Template Name: 21DicksonStreet
     <ol class="breadcrumb shadows">
       <li><a href="http://apartmentclub.localhost">Home</a></li><img src="<?php echo get_template_directory_uri(); ?>/images/demo/breadcrumbicon.png"/>
       <li><a href="http://apartmentclub.localhost/#features-adjust1">Properties</a></li><img src="<?php echo get_template_directory_uri(); ?>/images/demo/breadcrumbicon.png"/>
-      <li class="active">21DicksonStreet</li>
+      <li class="active"><?php $results->name; ?></li>
     </ol>
     </div>
 
@@ -47,8 +44,8 @@ Template Name: 21DicksonStreet
             <div class="row  common" style="margin-left:0.3em;">
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 shadows sections">
                     <div style="margin-top:0.2em;">
-                        <h3 class="headColor">Bronte Bliss Beach House,</h3>
-                        <h4>Bronte, NSW, Australia </h4>
+                        <h3 class="headColor"><?php echo $results->name; ?>,</h3>
+                        <h4><?php echo $results->address; ?></h4>
                         <div class="col-lg-2 col-lg-offset-1 col-md-2 col-sm-2 col-xs-2">
                             <img src="<?php echo get_template_directory_uri(); ?>/images/demo/home.png" align="middle"/><h5>Whole Apartment</h5>
                         </div>
