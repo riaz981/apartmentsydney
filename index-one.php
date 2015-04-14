@@ -245,7 +245,6 @@ $accesspress_ray_show_blog_number = (isset($accesspress_ray_settings['show_blog_
 				<?php
 					$results = array_pop($wpdb->get_results("Select count(*) as counter from wp_property"));
 					$result = array_pop($wpdb->get_results("Select * from wp_property"));
-					echo $result->name;
 					if($results->counter!="1"){
 					?>
 					<div class="features-adjust col-md-3 col-sm-3 col-xs-3" id="features-adjust1">
@@ -256,14 +255,20 @@ $accesspress_ray_show_blog_number = (isset($accesspress_ray_settings['show_blog_
 					<div id="featured-post-1" class="featured-post">
 
 						<figure class="featured-image">
-						<a href="http://apartmentclub.localhost/?page_id=47"><img src="<?php echo get_template_directory_uri().'/images/demo/featuredimage-1.jpg' ?>"></a>
+						<a href="<?php echo $result->url; ?>"><img src="<?php echo get_template_directory_uri().'/images/demo/featuredimage-1.jpg' ?>"  height="300" width="350"></a>
 						</figure>
 
 						<div class="featured-content">
-							<h2 class="featured-title"><a href="http://apartmentclub.localhost/?page_id=47">21 Dickson Street</a></h2>
-							<p>Bronte Bliss Beach House is a lovely 2 bedroom semi 5 minutes walk to the beach. Relax in your own blissful beach house. This semi is set in a great location on a quiet street just 5 minutes walk from the beach...</p>
+							<h2 class="featured-title"><a href="http://apartmentclub.localhost/?page_id=47"><?php echo $result->name; ?></a></h2>
+							<div class="summary">
 
-							<a href="http://apartmentclub.localhost/?page_id=47" class="view-more">Read More</a>
+								<?php echo $result->overview;?>
+
+							</div>
+							<div>
+								<strong>. . .</strong>
+							</div>
+							<a href="<?php echo $result->url; ?>" class="view-more">Read More</a>
 						</div>
 					</div>
 				</div>
@@ -408,7 +413,9 @@ if(!empty($accesspress_ray_settings['latitude']) && !empty($accesspress_ray_sett
 				    }
 				    google.maps.event.addDomListener(window, 'load', initialize);
 			</script>
-
+			<script type="text/javascript">
+				$(".summary").slice( 0,2 ).show();
+			</script>
 
 			<?php
 
