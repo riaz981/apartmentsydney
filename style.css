@@ -126,6 +126,11 @@ Reset
      color: #1489a6;
  }
 
+.summary{
+    height:5.5em;
+    line-height:1.4em; /* Height / no. of lines to display */
+    overflow:hidden;
+}
 
 /* Above done by Riaz Hasan */
 
