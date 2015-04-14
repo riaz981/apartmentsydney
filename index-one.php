@@ -285,14 +285,17 @@ $accesspress_ray_show_blog_number = (isset($accesspress_ray_settings['show_blog_
 									<?php if($i==0) {?>
 										<div id="featured-post-1" class="featured-post">
 									<?php } else{ ?>
-									 	<div id="featured-post-1" class="featured-post" style="margin-top:-33.75em; margin-left:33em;">
+									 	<div id="featured-post-1" class="featured-post" style="margin-top:-33.6em; margin-left:33em;">
 										<?php } $i++; ?>
 									<figure class="featured-image">
 									<a href="<?php echo $property->url; ?>"><img src="<?php echo get_template_directory_uri().'/images/demo/featuredimage-1.jpg' ?>"  height="300" width="350"></a>
 									</figure>
 
 									<div class="featured-content">
-										<h2 class="featured-title"><a href="<?php echo $property->url ?>"><?php echo $property->name; ?></a></h2>
+										<h2 class="featured-title"><form role="form" method="post" action="<?php echo $property->url ?>">
+											<input type="hidden" name="url" value="<?php echo $property->url ?>">
+											<button type="submit" name="submit" id="submit" class="makelink"><?php echo $property->name; ?></button>
+										</form></a></h2>
 										<div class="summary">
 
 											<?php echo $property->overview;?>
