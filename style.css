@@ -1737,6 +1737,10 @@ FEATURED-POST
 	margin-right: auto;
 }
 
+.multiple-sections{
+    margin-left:-5em;
+}
+
 .featured-section{
 	padding: 45px 0 60px;
 	background: #FFF;
