@@ -122,15 +122,12 @@ $accesspress_ray_show_blog_number = (isset($accesspress_ray_settings['show_blog_
 							</figure>
 							<?php } ?>
 
-
 							<?php
 							if($show_fontawesome_icon == 1){ ?>
 							<div class="featured-icon">
 							<i class="fa <?php echo $accesspress_ray_settings['featured_post2_icon'] ?>"></i>
 							</div>
 							<?php } ?>
-
-
 
 							<div class="featured-content">
 								<h2 class="featured-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
@@ -244,33 +241,79 @@ $accesspress_ray_show_blog_number = (isset($accesspress_ray_settings['show_blog_
 				<div class="row">
 				<?php
 					$results = array_pop($wpdb->get_results("Select count(*) as counter from wp_property"));
-					$result = array_pop($wpdb->get_results("Select * from wp_property"));
-					if($results->counter!="1"){
+					$result = $wpdb->get_results("Select * from wp_property");
+					//var_dump($result);
+					//var_dump($result);
+					if($results->counter=="1"){
 					?>
-					<div class="features-adjust col-md-3 col-sm-3 col-xs-3" id="features-adjust1">
-					<?php }
-					else{ ?>
 					<div class="features-adjust col-md-12 col-md-offset-2 col-sm-12 col-sm-offset-2 col-xs-12 col-xs-offset-2" id="features-adjust1">
-					<?php } ?>
-					<div id="featured-post-1" class="featured-post">
+						<div id="featured-post-1" class="featured-post">
 
-						<figure class="featured-image">
-						<a href="<?php echo $result->url; ?>"><img src="<?php echo get_template_directory_uri().'/images/demo/featuredimage-1.jpg' ?>"  height="300" width="350"></a>
-						</figure>
+							<figure class="featured-image">
+							<a href="<?php echo $result->url; ?>"><img src="<?php echo get_template_directory_uri().'/images/demo/featuredimage-1.jpg' ?>"  height="300" width="350"></a>
+							</figure>
 
-						<div class="featured-content">
-							<h2 class="featured-title"><a href="http://apartmentclub.localhost/?page_id=47"><?php echo $result->name; ?></a></h2>
-							<div class="summary">
+							<div class="featured-content">
+								<h2 class="featured-title"><a href="<?php echo $result->url ?>"><?php echo $result->name; ?></a></h2>
+								<div class="summary">
 
-								<?php echo $result->overview;?>
+									<?php echo $result->overview;?>
 
+								</div>
+								<div>
+									<strong>. . .</strong>
+								</div>
+								<form role="form" method="post" action="<?php echo $result->url ?>">
+									<input type="hidden" name="url" value="<?php echo $result->url ?>">
+									<button type="submit" name="submit" id="submit" class="view-more">Read More</button>
+								</form>
 							</div>
-							<div>
-								<strong>. . .</strong>
-							</div>
-							<a href="<?php echo $result->url; ?>" class="view-more">Read More</a>
 						</div>
-					</div>
+					<?php }
+					if($results->counter!="1"){ ?>
+
+								<?php if($result->counter>2){ ?>
+								<div class="features-adjust col-md-3 col-sm-3 col-xs-3 multiple-sections" id="features-adjust1">
+								<?php }?>
+
+							<?php if($result->counter==2){ ?>
+								<div class="features-adjust col-md-3 col-sm-3 col-xs-3" id="features-adjust1">
+							<?php } ?>
+								<?php
+								$i=0;
+							  	foreach($result as $property){ ?>
+									<?php if($i==0) {?>
+										<div id="featured-post-1" class="featured-post">
+									<?php } else{ ?>
+									 	<div id="featured-post-1" class="featured-post" style="margin-top:-33.75em; margin-left:33em;">
+										<?php } $i++; ?>
+									<figure class="featured-image">
+									<a href="<?php echo $property->url; ?>"><img src="<?php echo get_template_directory_uri().'/images/demo/featuredimage-1.jpg' ?>"  height="300" width="350"></a>
+									</figure>
+
+									<div class="featured-content">
+										<h2 class="featured-title"><a href="<?php echo $property->url ?>"><?php echo $property->name; ?></a></h2>
+										<div class="summary">
+
+											<?php echo $property->overview;?>
+
+										</div>
+										<div>
+											<strong>. . .</strong>
+										</div>
+										<form role="form" method="post" action="<?php echo $property->url ?>">
+											<input type="hidden" name="url" value="<?php echo $property->url ?>">
+											<button type="submit" name="submit" id="submit" class="view-more">Read More</button>
+										</form>
+									</div>
+								</div>
+								<?php
+							} ?>
+
+							<?php
+						}
+					?>
+
 				</div>
 			</div>
 
