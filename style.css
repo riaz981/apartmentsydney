@@ -132,6 +132,19 @@ Reset
     overflow:hidden;
 }
 
+.makelink{
+    background:none!important;
+     border:none;
+     padding:0!important;
+     margin-top:-2em;
+    /*optional*/
+     font-family:arial,sans-serif;/*input has OS specific font-family*/
+    font-size: 24px;
+     color:#069;
+     text-decoration:underline;
+     cursor:pointer;
+}
+
 /* Above done by Riaz Hasan */
 
 html, body, div, span, applet, object, iframe,
