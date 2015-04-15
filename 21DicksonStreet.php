@@ -56,13 +56,13 @@ Template Name: 21DicksonStreet
                             <img src="<?php echo get_template_directory_uri(); ?>/images/demo/home.png" align="middle"/><h5><?php echo $icon->typeProperty; ?></h5>
                         </div>
                         <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
-                            <img src="<?php echo get_template_directory_uri(); ?>/images/demo/users.png" align="middle"/><h5><?php echo $icon->guestNumber; ?> Guests</h5>
+                            <img src="<?php echo get_template_directory_uri(); ?>/images/demo/users.png" align="middle"/><h5><?php echo $icon->guestNumber; ?> Guest(s)</h5>
                         </div>
                         <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
                             <img src="<?php echo get_template_directory_uri(); ?>/images/demo/bedroom.png" align="middle"/><h5><?php echo $icon->bedroomNumber; ?> Bedroom(s)</h5>
                         </div>
                         <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
-                            <img src="<?php echo get_template_directory_uri(); ?>/images/demo/bed.png" align="middle"/><h5><?php echo $icon->bedsNumber; ?> Beds</h5>
+                            <img src="<?php echo get_template_directory_uri(); ?>/images/demo/bed.png" align="middle"/><h5><?php echo $icon->bedsNumber; ?> Bed(s)</h5>
                         </div>
                         <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
                             <img src="<?php echo get_template_directory_uri(); ?>/images/demo/minimumstay.png" align="middle"/><h5><?php echo $results->minimumStay; ?> Nights Min.</h5>
