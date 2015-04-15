@@ -95,7 +95,7 @@ Template Name: My Custom Page
                           </tbody>
                       </table>
                     </div>
-
+                    
                     <div class="col-lg-12" style="margin-bottom:0.5em;">
                         <button type="button" class="btn btn-primary" value="Book">Book</button>
                         <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal" value="Enquire">Enquire</button>
