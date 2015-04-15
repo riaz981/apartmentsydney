@@ -43,7 +43,6 @@ Template Name: My Custom Page
                 $icon = json_decode($results->icon);
                 $rates = json_decode($results->rates);
                 $map = json_decode($results->map);
-                var_dump($map);
             ?>
             <!-- This section is for icons home, users, bedrooms and beds -->
             <div class="row  common" style="margin-left:0.3em;">
