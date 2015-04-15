@@ -29,15 +29,15 @@ Template Name: 21DicksonStreet
         <!--<article class="col-lg-9 col-lg-push-3 col-md-10 col-md-push-2 col-sm-8 col-sm-push-4 col-xs-6 col-xs-push-6">-->
             <article class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
             <div class="shadowsslide">
-            <section id="slider-banner">
-                <div class="slider-wrap">
-                    <?php
-                        $message = "Hello";
-                        //accesspress_ray_bxsliderDickson($message);
-                        do_action( 'accesspress_ray_bxsliderD',$message );
-                    ?>
-                </div>
-            </section><!-- #slider-banner closes-->
+                <section id="slider-banner">
+                    <div class="slider-wrap">
+                        <?php
+                            $message = "Hello";
+                            //accesspress_ray_bxsliderDickson($message);
+                            do_action( 'accesspress_ray_bxsliderD',$message );
+                        ?>
+                    </div>
+                </section><!-- #slider-banner closes-->
             </div>
 
             <?php
