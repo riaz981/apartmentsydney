@@ -40,6 +40,12 @@ Template Name: 21DicksonStreet
             </section><!-- #slider-banner closes-->
             </div>
 
+            <?php
+                $icon = json_decode($results->icon);
+                $rates = json_decode($results->rates);
+                $map = json_decode($results->map);
+            ?>
+
             <!-- This section is for icons home, users, bedrooms and beds -->
             <div class="row  common" style="margin-left:0.3em;">
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 shadows sections">
@@ -47,19 +53,19 @@ Template Name: 21DicksonStreet
                         <h3 class="headColor"><?php echo $results->name; ?>,</h3>
                         <h4><?php echo $results->address; ?></h4>
                         <div class="col-lg-2 col-lg-offset-1 col-md-2 col-sm-2 col-xs-2">
-                            <img src="<?php echo get_template_directory_uri(); ?>/images/demo/home.png" align="middle"/><h5>Whole Apartment</h5>
+                            <img src="<?php echo get_template_directory_uri(); ?>/images/demo/home.png" align="middle"/><h5><?php echo $icon->typeProperty; ?></h5>
                         </div>
                         <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
-                            <img src="<?php echo get_template_directory_uri(); ?>/images/demo/users.png" align="middle"/><h5>4 Guests</h5>
+                            <img src="<?php echo get_template_directory_uri(); ?>/images/demo/users.png" align="middle"/><h5><?php echo $icon->guestNumber; ?> Guests</h5>
                         </div>
                         <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
-                            <img src="<?php echo get_template_directory_uri(); ?>/images/demo/bedroom.png" align="middle"/><h5>2 Bedrooms</h5>
+                            <img src="<?php echo get_template_directory_uri(); ?>/images/demo/bedroom.png" align="middle"/><h5><?php echo $icon->bedroomNumber; ?> Bedroom(s)</h5>
                         </div>
                         <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
-                            <img src="<?php echo get_template_directory_uri(); ?>/images/demo/bed.png" align="middle"/><h5>3 Beds</h5>
+                            <img src="<?php echo get_template_directory_uri(); ?>/images/demo/bed.png" align="middle"/><h5><?php echo $icon->bedsNumber; ?> Beds</h5>
                         </div>
                         <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
-                            <img src="<?php echo get_template_directory_uri(); ?>/images/demo/minimumstay.png" align="middle"/><h5>5 Nights Min.</h5>
+                            <img src="<?php echo get_template_directory_uri(); ?>/images/demo/minimumstay.png" align="middle"/><h5><?php echo $results->minimumStay; ?> Nights Min.</h5>
                         </div>
                     </div>
                 </div>
@@ -74,22 +80,22 @@ Template Name: 21DicksonStreet
                           <tbody>
                               <tr>
                                 <th class="text-nowrap col-md-3" scope="row">Nightly Price</th>
-                                <td>A$300 (minimum stay of 5 nights)</td>
+                                <td>A$<?php echo $rates->nightlyRate; ?> (minimum stay of <?php echo $results->minimumStay; ?> nights)</td>
                               </tr>
                               <tr>
                                 <th class="text-nowrap col-md-3" scope="row">Weekly Price</th>
-                                <td>A$1800</td>
+                                <td>A$<?php echo $rates->weeklyRate; ?></td>
                               </tr>
                               <tr>
                                 <th class="text-nowrap col-md-3" scope="row">Monthly Price</th>
                                 <td>
-                                    A$7000
+                                    A$<?php echo $rates->monthlyRate; ?>
                                 </td>
                              </tr>
                              <tr>
                                 <th class="text-nowrap col-md-3" scope="row">Cleaning Fee</th>
                                 <td>
-                                    A$50
+                                    A$<?php echo $rates->cleaningRate; ?>
                                 </td>
                             </tr>
                           </tbody>
@@ -146,19 +152,7 @@ Template Name: 21DicksonStreet
             <div class="row  common" style="margin-left:0.3em;">
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 shadows sections">
                     <h4 class="headColor">Overview</h4>
-                    <p>Bronte Bliss Beach House is a lovely 2 bedroom semi 5 minutes walk to the beach</p>
-
-                    <p>Relax in your own blissful beach house. This semi is set in a great location on a quiet street just 5 minutes walk from the beach.</p>
-
-                    <p>The house is set out across 2 double bedrooms.</p>
-
-                    <p>The master bedroom is with king bed and built in wardrobes. The second bedroom can be configured offered as a king bed or two king singles. The house is ideal for either two friends, two couples or a 4-5 person family.</p>
-
-                    <p>The living area is open plan with fully equipped kitchen, dining area with 8 seats, lounge suite, ottoman, 55 inch flatscreen TV, wireless internet, CD/Stereo and DVD library.</p>
-
-                    <p>The living area opens onto a garden courtyard with seating for 8 people, lighting, trees and gas BBQ. This area is ideal for summer entertaining.</p>
-
-                    <p>Other amenities include: bathroom, shower, bathtub, washer, dryer, lovely front porch and garden.</p>
+                    <?php echo nl2br($results->overview); ?>
                 </div> <!-- Div containing overview closes -->
             </div> <!-- container div for Overview closes -->
 
@@ -170,53 +164,42 @@ Template Name: 21DicksonStreet
                            <tbody>
                               <tr>
                                 <th class="text-nowrap col-md-3" scope="row">Dining</th>
-                                <td>Dining Area</td>
+                                <td><?php echo nl2br($results->dining); ?></td>
                               </tr>
                               <tr>
                                 <th class="text-nowrap col-md-3" scope="row">Bathroom</th>
                                 <td>
-                                    <p>1 Bathroom</p>
-                                    <p>Bathroom 1 - toilet , shower enclosure </p>
+                                    <?php echo nl2br($results->bathroomDescription); ?>
                                 </td>
                              </tr>
                              <tr>
                                 <th class="text-nowrap col-md-3" scope="row">Bedrooms</th>
                                 <td>
-                                    <p>2 Bedrooms, Sleeps 5</p>
-                                    <p>Bedroom 1 - 1 double bed</p>
-                                    <p>Bedroom 2 - 1 double bed</p>
+                                    <?php echo nl2br($results->bedroomDescription); ?>
                                 </td>
                             </tr>
                             <tr>
                                 <th class="text-nowrap col-md-3" scope="row">Attractions</th>
                                 <td>
-                                    <p>bay, cinema</p>
-                                    <p>playground, restaurants</p>
+                                    <?php echo nl2br($results->attractionDescription); ?>
                                 </td>
                             </tr>
                             <tr>
                                 <th class="text-nowrap col-md-3" scope="row">Leisure Activites</th>
                                 <td>
-                                    <p>beach combing, scenic drives</p>
-                                    <p>paddle boating, walking</p>
-                                    <p>photography, whale watching</p>
+                                    <?php echo nl2br($results->leisureDescription); ?>
                                 </td>
                             </tr>
                             <tr>
                                 <th class="text-nowrap col-md-3" scope="row">Local Services &amp Businesses</th>
                                 <td>
-                                    <p>ATM/bank, hospital</p>
-                                    <p>Babysitter, laundrette - serviced</p>
-                                    <p>fitness centre, massage therapist</p>
-                                    <p>groceries, medical services</p>
+                                    <?php echo nl2br($results->businessDescription); ?>
                                 </td>
                             </tr>
                             <tr>
                                 <th class="text-nowrap col-md-3" scope="row">Sports &amp Adventure Activities</th>
                                 <td>
-                                    <p>cycling, swimming</p>
-                                    <p>golf, wind-surfing</p>
-                                    <p>sailing</p>
+                                    <?php echo nl2br($results->sportsDescription); ?>
                                 </td>
                             </tr>
                             </tbody>
@@ -234,26 +217,22 @@ Template Name: 21DicksonStreet
                     <tbody>
                         <tr>
                           <th class="text-nowrap col-md-3" scope="row">Sleeps</th>
-                          <td>5</td>
+                          <td><?php echo $icon->guestNumber; ?></td>
                         </tr>
 
                         <tr>
                           <th class="text-nowrap col-md-3" scope="row">Bedrooms</th>
-                          <td>2</td>
-                        </tr>
-                        <tr>
-                            <th class="text-nowrap col-md-3" scope="row">Bathrooms</th>
-                            <td>1</td>
+                          <td><?php echo $icon->bedroomNumber; ?></td>
                         </tr>
 
                         <tr>
                           <th class="text-nowrap col-md-3" scope="row">Property Type</th>
-                          <td>House</td>
+                          <td><?php echo $icon->typeProperty; ?></td>
                         </tr>
 
                         <tr>
                           <th class="text-nowrap col-md-3" scope="row">Minimum Stay</th>
-                          <td>5 nights</td>
+                          <td><?php echo $results->minimumStay; ?> nights</td>
                         </tr>
                     </tbody>
                 </table>
@@ -271,17 +250,28 @@ Template Name: 21DicksonStreet
                 </div>
             </div>
 
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 labelInput">
+                <input type="hidden" class="form-control" id="latitude" name="latitude" value="<?php echo $map->latitude; ?>" placeholder="Latitude" required>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 labelInput">
+                <input type="hidden" class="form-control" id="longitude" name="longitude" value="<?php echo $map->longitude; ?>" placeholder="Longitude" required>
+            </div>
+
                 <script>
                   function initialize() {
+                    var latitude = undefined;
+                    var longitude = undefined;
+                    latitude = document.getElementById("latitude").value;
+                    longitude = document.getElementById("longitude").value;
                     var mapCanvas = document.getElementById('ap-map-canvas');
                     var mapOptions = {
-                      center: new google.maps.LatLng(-33.899453, 151.260322),
+                      center: new google.maps.LatLng(latitude, longitude),
                       zoom: 15,
                       mapTypeId: google.maps.MapTypeId.ROADMAP
                     }
                     var map = new google.maps.Map(mapCanvas, mapOptions);
                     var marker = new google.maps.Marker({
-                        position: new google.maps.LatLng(-33.899453, 151.260322),
+                        position: new google.maps.LatLng(latitude, longitude),
                         map: map
                     });
                   }
