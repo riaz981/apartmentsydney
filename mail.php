@@ -23,8 +23,8 @@ Template Name: mail
     $mail->Port = 587;                                     // TCP port to connect to
     $mail->From = 'info@apartmentsydney.com';                           // This is the webhosting sites email
     $mail->FromName = 'Apartment Sydney';                               // Name of the webshosting site or company's site
-    $mail->addAddress('riaz981@gmail.com','Riaz');
-    //$mail->addAddress('matt@alpinehabitat.com', 'Matthew Reede');     // Add a recipient
+    //$mail->addAddress('riaz981@gmail.com','Riaz');
+    $mail->addAddress('matt@alpinehabitat.com', 'Matthew Reede');     // Add a recipient
     //$mail->addAddress('ellen@example.com');                         // Name is optional
     //$mail->addReplyTo('info@example.com', 'Information');
     $mail->addReplyTo($email, $name);
