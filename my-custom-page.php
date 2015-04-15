@@ -220,7 +220,7 @@ Template Name: My Custom Page
 
                         <tr>
                           <th class="text-nowrap col-md-3" scope="row">Bedrooms</th>
-                          <td><?php echo $icon->bedroomNumber ?></td>
+                          <td><?php echo $icon->bedroomNumber; ?></td>
                         </tr>
 
                         <tr>
