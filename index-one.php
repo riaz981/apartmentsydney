@@ -293,7 +293,7 @@ $accesspress_ray_show_blog_number = (isset($accesspress_ray_settings['show_blog_
 
 									<div class="featured-content">
 										<h2 class="featured-title"><form role="form" method="post" action="<?php echo $property->url ?>">
-											<input type="hidden" name="url" value="<?php echo $property->url ?>">
+											<input type="hidden" name="id" value="<?php echo $property->id ?>">
 											<button type="submit" name="submit" id="submit" class="makelink"><?php echo $property->name; ?></button>
 										</form></a></h2>
 										<div class="summary">
@@ -305,7 +305,7 @@ $accesspress_ray_show_blog_number = (isset($accesspress_ray_settings['show_blog_
 											<strong>. . .</strong>
 										</div>
 										<form role="form" method="post" action="<?php echo $property->url ?>">
-											<input type="hidden" name="url" value="<?php echo $property->url ?>">
+											<input type="hidden" name="id" value="<?php echo $property->id ?>">
 											<button type="submit" name="submit" id="submit" class="view-more">Read More</button>
 										</form>
 									</div>
