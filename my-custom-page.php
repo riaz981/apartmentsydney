@@ -7,8 +7,8 @@ Template Name: My Custom Page
 <?php get_header(); ?>
 
 <?php
-    $url = $_REQUEST['url'];
-    $query="Select * from wp_property where url='".$url."'";
+    $id = $_REQUEST['id'];
+    $query="Select * from wp_property where id='".$id."'";
     $results = array_pop($wpdb->get_results($query));
 ?>
 <div class="container" id="container">
