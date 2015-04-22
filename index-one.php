@@ -238,6 +238,8 @@ $accesspress_ray_show_blog_number = (isset($accesspress_ray_settings['show_blog_
 			<?php }
 
 			}else{ ?>
+				<div id="features-adjust-properties">
+				</div>
 				<div class="row">
 				<?php
 					$results = array_pop($wpdb->get_results("Select count(*) as counter from wp_property"));
