@@ -13,7 +13,7 @@ Template Name: 21DicksonStreet
 
     $pics=json_decode($results->photo_name);
     foreach($pics as $pic)
-        echo "<a href='".$results->photo_url.$pic."'>"."Pic links"."</a>";
+        echo "<a href='".$results->photo_url.$pic."'>"."Pic links"."</a><br>";
 ?>
 <div class="container" id="container">
 
