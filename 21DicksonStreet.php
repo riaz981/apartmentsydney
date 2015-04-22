@@ -10,6 +10,10 @@ Template Name: 21DicksonStreet
     $id = $_REQUEST['id'];
     $query="Select * from wp_property where id='".$id."'";
     $results = array_pop($wpdb->get_results($query));
+
+    $pics=json_decode($results->photo_name);
+    foreach($pics as $pic)
+        echo "<a href='".$results->photo_url.$pic."'>"."Pic links"."</a>";
 ?>
 <div class="container" id="container">
 
