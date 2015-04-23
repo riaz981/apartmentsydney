@@ -688,27 +688,21 @@ function accesspress_ray_bxsliderDickson($id){
 
 		<div class="bx-slider">
 				<?php
-				
-				global $wpdb;
-				$query="Select * from wp_property where id='".$id."'";
-				$results = array_pop($wpdb->get_results($query));
-
-				$pics=json_decode($results->photo_name);
-				var_dump($pics);
-				foreach($pics as $pic){
-					?>
-						<div class="slides">
-					<?php
+					global $wpdb;
+					$query="Select * from wp_property where id='".$id."'";
+					$results = array_pop($wpdb->get_results($query));
+					$pics=json_decode($results->photo_name);
+					foreach($pics as $pic){
+				?>
+				<div class="slides">
+				<?php
 					echo "<img src='".$results->photo_url.$pic."'class='img-responsive' style='width:100%' alt='slider'>";
-					?>
+				?>
 				</div>
-			<?php
-				}
-
+				<?php
+					}
 				?>
 			</div>
-
-
 	<?php
 	}
 }
