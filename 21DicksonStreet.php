@@ -11,9 +11,6 @@ Template Name: 21DicksonStreet
     $id = $_REQUEST['id'];
     $query="Select * from wp_property where id='".$id."'";
     $results = array_pop($wpdb->get_results($query));
-
-
-
 ?>
 <div class="container" id="container">
 
@@ -162,7 +159,7 @@ Template Name: 21DicksonStreet
 
             <div class="row  common" style="margin-left:0.3em;">
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 shadows sections">
-              	     <h4 class="headColor">Specifications:</h4>
+                     <h4 class="headColor">Specifications:</h4>
                      <div class="table-responsive">
                        <table class="table table-bordered table-hover">
                            <tbody>
