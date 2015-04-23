@@ -7,9 +7,13 @@ Template Name: My Custom Page
 <?php get_header(); ?>
 
 <?php
+
     $id = $_REQUEST['id'];
     $query="Select * from wp_property where id='".$id."'";
     $results = array_pop($wpdb->get_results($query));
+
+
+
 ?>
 <div class="container" id="container">
 
@@ -17,7 +21,7 @@ Template Name: My Custom Page
     <ol class="breadcrumb shadows">
       <li><a href="http://apartmentclub.localhost">Home</a></li><img src="<?php echo get_template_directory_uri(); ?>/images/demo/breadcrumbicon.png"/>
       <li><a href="http://apartmentclub.localhost/#features-adjust1">Properties</a></li><img src="<?php echo get_template_directory_uri(); ?>/images/demo/breadcrumbicon.png"/>
-      <li class="active"><?php echo $results->name; ?></li>
+      <li class="active"><?php $results->name; ?></li>
     </ol>
     </div>
 
@@ -29,27 +33,29 @@ Template Name: My Custom Page
         <!--<article class="col-lg-9 col-lg-push-3 col-md-10 col-md-push-2 col-sm-8 col-sm-push-4 col-xs-6 col-xs-push-6">-->
             <article class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
             <div class="shadowsslide">
-            <section id="slider-banner">
-                <div class="slider-wrap">
-                    <?php
-                        $message = "Hello";
-                        //accesspress_ray_bxsliderDickson($message);
-                        do_action( 'accesspress_ray_bxsliderD',$message );
-                    ?>
-                </div>
-            </section><!-- #slider-banner closes-->
+                <section id="slider-banner">
+                    <div class="slider-wrap">
+                        <?php
+
+                            //accesspress_ray_bxsliderDickson($message);
+                            do_action( 'accesspress_ray_bxsliderD',$id );
+                        ?>
+                    </div>
+                </section><!-- #slider-banner closes-->
             </div>
+
             <?php
                 $icon = json_decode($results->icon);
                 $rates = json_decode($results->rates);
                 $map = json_decode($results->map);
             ?>
+
             <!-- This section is for icons home, users, bedrooms and beds -->
             <div class="row  common" style="margin-left:0.3em;">
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 shadows sections">
                     <div style="margin-top:0.2em;">
                         <h3 class="headColor"><?php echo $results->name; ?>,</h3>
-                        <h4><?php $results->address; ?></h4>
+                        <h4><?php echo $results->address; ?></h4>
                         <div class="col-lg-2 col-lg-offset-1 col-md-2 col-sm-2 col-xs-2">
                             <img src="<?php echo get_template_directory_uri(); ?>/images/demo/home.png" align="middle"/><h5><?php echo $icon->typeProperty; ?></h5>
                         </div>
@@ -275,6 +281,7 @@ Template Name: My Custom Page
                   }
                   google.maps.event.addDomListener(window, 'load', initialize);
                 </script>
+
 
             </div>
             </div>

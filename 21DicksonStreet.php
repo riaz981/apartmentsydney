@@ -7,13 +7,13 @@ Template Name: 21DicksonStreet
 <?php get_header(); ?>
 
 <?php
+
     $id = $_REQUEST['id'];
     $query="Select * from wp_property where id='".$id."'";
     $results = array_pop($wpdb->get_results($query));
 
-    $pics=json_decode($results->photo_name);
-    foreach($pics as $pic)
-        echo "<a href='".$results->photo_url.$pic."'>"."Pic links"."</a><br>";
+
+
 ?>
 <div class="container" id="container">
 
@@ -36,9 +36,9 @@ Template Name: 21DicksonStreet
                 <section id="slider-banner">
                     <div class="slider-wrap">
                         <?php
-                            $message = "Hello";
+
                             //accesspress_ray_bxsliderDickson($message);
-                            do_action( 'accesspress_ray_bxsliderD',$message );
+                            do_action( 'accesspress_ray_bxsliderD',$id );
                         ?>
                     </div>
                 </section><!-- #slider-banner closes-->
