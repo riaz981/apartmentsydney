@@ -243,10 +243,9 @@ $accesspress_ray_show_blog_number = (isset($accesspress_ray_settings['show_blog_
 				<div class="row">
 				<?php
 					$results = array_pop($wpdb->get_results("Select count(*) as counter from wp_property"));
-					$result = $wpdb->get_results("Select * from wp_property");
-					//var_dump($result);
-					//var_dump($result);
+					$result = array_pop($wpdb->get_results("Select * from wp_property"));
 					if($results->counter=="1"){
+
 					?>
 					<div class="features-adjust col-md-12 col-md-offset-2 col-sm-12 col-sm-offset-2 col-xs-12 col-xs-offset-2" id="features-adjust1">
 						<div id="featured-post-1" class="featured-post">
@@ -266,15 +265,19 @@ $accesspress_ray_show_blog_number = (isset($accesspress_ray_settings['show_blog_
 									<strong>. . .</strong>
 								</div>
 								<form role="form" method="post" action="<?php echo $result->url ?>">
-									<input type="hidden" name="url" value="<?php echo $result->url ?>">
+									<input type="hidden" name="id" value="<?php echo $result->id ?>">
 									<button type="submit" name="submit" id="submit" class="view-more">Read More</button>
 								</form>
 							</div>
 						</div>
-					<?php }
-					if($results->counter!="1"){ ?>
+					<?php } ?>
+					<?php
+						$results = array_pop($wpdb->get_results("Select count(*) as counter from wp_property"));
+						$result = $wpdb->get_results("Select * from wp_property");
+					?>
+					<?php if($results->counter!="1"){ ?>
 
-								<?php if($result->counter>2){ ?>
+ 								<?php if($result->counter>2){ ?>
 								<div class="features-adjust col-md-3 col-sm-3 col-xs-3 multiple-sections" id="features-adjust1">
 								<?php }?>
 
