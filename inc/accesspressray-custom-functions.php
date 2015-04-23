@@ -521,8 +521,8 @@ add_action( 'wp_enqueue_scripts', 'accesspress_ray_scripts' );
 
 /* Customer function for controlling slider for 21DicksonStreet */
 
-function accesspress_ray_bxsliderDickson($message){
-	echo $message;
+function accesspress_ray_bxsliderDickson($id){
+	//echo $id;
 	global $accesspress_ray_options, $post;
 	$accesspress_ray_settings = get_option( 'accesspress_ray_options', $accesspress_ray_options );
 	($accesspress_ray_settings['slider_show_pager'] == 'yes1' || empty($accesspress_ray_settings['slider_show_pager'])) ? ($a='true') : ($a='false');
@@ -642,6 +642,7 @@ function accesspress_ray_bxsliderDickson($message){
 				});
 			});
 		</script>
+		<!--
 		<div class="bx-slider">
 			<div class="slides">
 				<img src="<?php echo get_template_directory_uri(); ?>/images/demo/dickson/1.jpg" class="img-responsive" style="width:100%" alt="slider1">
@@ -683,6 +684,31 @@ function accesspress_ray_bxsliderDickson($message){
 				</div>
 			</div>
 		</div>
+	-->
+
+		<div class="bx-slider">
+				<?php
+				
+				global $wpdb;
+				$query="Select * from wp_property where id='".$id."'";
+				$results = array_pop($wpdb->get_results($query));
+
+				$pics=json_decode($results->photo_name);
+				var_dump($pics);
+				foreach($pics as $pic){
+					?>
+						<div class="slides">
+					<?php
+					echo "<img src='".$results->photo_url.$pic."'class='img-responsive' style='width:100%' alt='slider'>";
+					?>
+				</div>
+			<?php
+				}
+
+				?>
+			</div>
+
+
 	<?php
 	}
 }
