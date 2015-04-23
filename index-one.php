@@ -255,7 +255,10 @@ $accesspress_ray_show_blog_number = (isset($accesspress_ray_settings['show_blog_
 							</figure>
 
 							<div class="featured-content">
-								<h2 class="featured-title"><a href="<?php echo $result->url ?>"><?php echo $result->name; ?></a></h2>
+								<h2 class="featured-title"><form role="form" method="post" action="<?php echo $result->url ?>">
+									<input type="hidden" name="id" value="<?php echo $result->id ?>">
+									<button type="submit" name="submit" id="submit" class="makelink"><?php echo $result->name; ?></button>
+								</form></a></h2>
 								<div class="summary">
 
 									<?php echo $result->overview;?>
