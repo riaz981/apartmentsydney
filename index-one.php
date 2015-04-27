@@ -247,11 +247,17 @@ $accesspress_ray_show_blog_number = (isset($accesspress_ray_settings['show_blog_
 					if($results->counter=="1"){
 
 					?>
+					<?php
+
+					$picture=json_decode($result->photo_name);
+					 ?>
 					<div class="features-adjust col-md-12 col-md-offset-2 col-sm-12 col-sm-offset-2 col-xs-12 col-xs-offset-2" id="features-adjust1">
 						<div id="featured-post-1" class="featured-post">
 
 							<figure class="featured-image">
-							<a href="<?php echo $result->url; ?>"><img src="<?php echo get_template_directory_uri().'/images/demo/featuredimage-1.jpg' ?>"  height="300" width="350"></a>
+
+							<img class="imagescaler" src="<?php echo $result->photo_url.$picture[0]; ?>">
+
 							</figure>
 
 							<div class="featured-content">
@@ -277,6 +283,7 @@ $accesspress_ray_show_blog_number = (isset($accesspress_ray_settings['show_blog_
 					<?php
 						$results = array_pop($wpdb->get_results("Select count(*) as counter from wp_property"));
 						$result = $wpdb->get_results("Select * from wp_property");
+
 					?>
 					<?php if($results->counter!="1"){ ?>
 
@@ -289,14 +296,17 @@ $accesspress_ray_show_blog_number = (isset($accesspress_ray_settings['show_blog_
 							<?php } ?>
 								<?php
 								$i=0;
-							  	foreach($result as $property){ ?>
-									<?php if($i==0) {?>
+							  	foreach($result as $property){
+									$picture=json_decode($property->photo_name);
+									?>
+
+ 									<?php if($i==0) {?>
 										<div id="featured-post-1" class="featured-post">
 									<?php } else{ ?>
-									 	<div id="featured-post-1" class="featured-post" style="margin-top:-33.6em; margin-left:33em;">
+									 	<div id="featured-post-1" class="featured-post" style="margin-top:-31.1em; margin-left:33em;">
 										<?php } $i++; ?>
 									<figure class="featured-image">
-									<a href="<?php echo $property->url; ?>"><img src="<?php echo get_template_directory_uri().'/images/demo/featuredimage-1.jpg' ?>"  height="300" width="350"></a>
+									<img class="imagescaler" src="<?php echo $property->photo_url.$picture[0]; ?>">
 									</figure>
 
 									<div class="featured-content">
