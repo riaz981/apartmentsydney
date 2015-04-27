@@ -39,6 +39,11 @@ Reset
     margin-top:0.1em;
 }
 
+.imagescaler{
+    width: 25em;
+    height:15em;
+}
+
 /*
     The width in sub-container was 80% previously. when adding aside make it 80% again.
     Just temporarily 100% for now.
