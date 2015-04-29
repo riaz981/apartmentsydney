@@ -17,7 +17,7 @@ Template Name: 21DicksonStreet
     <ol class="breadcrumb shadows">
         <li><a href="http://apartmentclub.localhost">Home</a></li><img src="<?php echo get_template_directory_uri(); ?>/images/demo/breadcrumbicon.png"/>
         <li><a href="http://apartmentclub.localhost/#features-adjust1">Properties</a></li><img src="<?php echo get_template_directory_uri(); ?>/images/demo/breadcrumbicon.png"/>
-        <li class="active"><?php $results->name; ?></li>
+        <li class="active"><?php echo $results->name; ?></li>
     </ol>
 </div>
 
