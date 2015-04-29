@@ -107,38 +107,38 @@ Template Name: 21DicksonStreet
 
 <!-- Modal -->
 <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                    <h4 class="modal-title headColor" id="myModalLabel">Please fill the form:</h4>
-                </div>
-                <div class="modal-body">
-                    <form role="form" data-toggle="validator" method="post" action="http://apartmentclub.localhost/?page_id=59">
-                        <div class="form-group">
-                            <label for="emailname">Email Address</label>
-                            <input type="email" class="form-control" id="emailname" name="emailname" placeholder="Enter email" data-error="Please enter a valid email address" required>
-                            <div class="help-block with-errors"></div>
-                        </div>
-                        <div class="form-group">
-                            <label for="clientname">Name</label>
-                            <input class="form-control" id="clientname" name="clientname" placeholder="Enter name" data-error="A name is required" required>
-                            <div class="help-block with-errors"></div>
-                        </div>
-                        <div class="form group">
-                            <label for="comment">Enquiry:</label>
-                            <textarea style="width:100%" class="form-control" id="comment" name="comment" placeholder="Enter your query"></textarea>
-                        </div>
-                </div>
-                <div class="modal-footer">
-                    <button type="submit" name="submit" id="submit" class="btn btn-primary">Submit</button>
-                    <button type="reset" class="btn btn-primary">Reset</button>
-                    <button type="button" class="btn btn-primary" data-dismiss="modal">Cancel</button>
-                </div>
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title headColor" id="myModalLabel">Please fill the form:</h4>
+            </div>
+            <div class="modal-body">
+                <form role="form" data-toggle="validator" method="post" action="http://apartmentclub.localhost/?page_id=59">
+                    <div class="form-group">
+                        <label for="emailname">Email Address</label>
+                        <input type="email" class="form-control" id="emailname" name="emailname" placeholder="Enter email" data-error="Please enter a valid email address" required>
+                        <div class="help-block with-errors"></div>
+                    </div>
+                    <div class="form-group">
+                        <label for="clientname">Name</label>
+                        <input class="form-control" id="clientname" name="clientname" placeholder="Enter name" data-error="A name is required" required>
+                        <div class="help-block with-errors"></div>
+                    </div>
+                    <div class="form group">
+                        <label for="comment">Enquiry:</label>
+                        <textarea style="width:100%" class="form-control" id="comment" name="comment" placeholder="Enter your query"></textarea>
+                    </div>
+            </div>
+            <div class="modal-footer">
+                <button type="submit" name="submit" id="submit" class="btn btn-primary">Submit</button>
+                <button type="reset" class="btn btn-primary">Reset</button>
+                <button type="button" class="btn btn-primary" data-dismiss="modal">Cancel</button>
             </div>
         </div>
-                </form>
     </div>
+            </form>
+</div>
 <!-- Modal Ends -->
     </div>
 </div>
