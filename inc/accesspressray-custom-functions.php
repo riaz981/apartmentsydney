@@ -489,7 +489,7 @@ add_action( 'wp_enqueue_scripts', 'accesspress_ray_scripts' );
                     <?php if($accesspress_ray_settings['slider_caption']=='yes4' || empty($accesspress_ray_settings['slider_caption'])):?>
 					<div class="slider-caption">
 						<div class="ak-container">
-							<h1 class="caption-title">Apartment Sydney</h1><br />
+							<h1 class="caption-title">Apartments Sydney</h1><br />
 							<h2 class="caption-description">Best apartment in town, close to everything. Reasonable in Price!</h2>
 							<br>
 							<a href="#">Read More</a>
@@ -503,7 +503,7 @@ add_action( 'wp_enqueue_scripts', 'accesspress_ray_scripts' );
                     <?php if($accesspress_ray_settings['slider_caption']=='yes4' || empty($accesspress_ray_settings['slider_caption'])):?>
 					<div class="slider-caption">
 						<div class="ak-container">
-							<h1 class="caption-title">Apartment Sydney</h1><br />
+							<h1 class="caption-title">Apartments Sydney</h1><br />
 							<h2 class="caption-description">Book with us for the best deal on the apartment! Follow links below for more details!</h2>
 							<br>
 							<a href="#">Read More</a>
