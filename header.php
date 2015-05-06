@@ -47,12 +47,19 @@ $accesspress_ray_settings = get_option( 'accesspress_ray_options', $accesspress_
                     <h1 class="menu-toggle"><?php _e( 'Menu', 'accesspress_ray' ); ?></h1>
 
                         <?php
-                        wp_nav_menu( array(
+
+                        wp_nav_menu(array(
+                        ‘theme_location’ => ‘primary’,
+                        ‘menu_class’ => ‘dropdown’,
+                        ‘container_class’ => ‘menu’,
+                        ‘fallback_cb’ => ‘wp_page_menu’ ));
+
+                        /*wp_nav_menu( array(
                         'theme_location' => 'primary' ,
                         'container_class' => 'menu',
                         'items_wrap'      => '<ul id="%1$s">%3$s</ul>',
                         ) );
-
+                        */
                         if($accesspress_ray_settings['show_search'] == 1){ ?>
                         <div class="search-icon">
                         <i class="fa fa-search"></i>
