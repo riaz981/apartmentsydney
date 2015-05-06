@@ -7,12 +7,14 @@ Template Name: My Custom Page
 <?php get_header(); ?>
 
 <?php
-    $id = $_REQUEST['id'];
-    $query="Select * from wp_property where id='".$id."'";
-    $results = array_pop($wpdb->get_results($query));
-
+    //$id = $_REQUEST['id'];
+    //$query="Select * from wp_property where id='".$id."'";
     $page_id=$_REQUEST['page_id'];
-    echo $page_id;
+    $query="Select * from wp_posts where id='".$page_id."'";
+    $results = array_pop($wpdb->get_results($query));
+    var_dump($results);
+    //$page_id=$_REQUEST['page_id'];
+    //echo $page_id;
 ?>
 <div class="container" id="container">
 
