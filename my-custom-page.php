@@ -10,6 +10,9 @@ Template Name: My Custom Page
     $id = $_REQUEST['id'];
     $query="Select * from wp_property where id='".$id."'";
     $results = array_pop($wpdb->get_results($query));
+
+    $page_id=$_REQUEST['page_id'];
+    echo $page_id;
 ?>
 <div class="container" id="container">
 

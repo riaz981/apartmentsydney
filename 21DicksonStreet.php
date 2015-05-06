@@ -10,6 +10,8 @@ Template Name: 21DicksonStreet
     $id = $_REQUEST['id'];
     $query="Select * from wp_property where id='".$id."'";
     $results = array_pop($wpdb->get_results($query));
+    $page_id=$_REQUEST['page_id'];
+    echo $page_id;
 ?>
 <div class="container" id="container">
 
@@ -200,6 +202,14 @@ Template Name: 21DicksonStreet
         </div> <!-- responsive table closes -->
     </div> <!-- Sprecification div closes -->
 </div> <!-- Container div for specification closes -->
+
+<div class="row common" style="margin-left:0.3em;">
+    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 shadows sections">
+        <div class="table-responsive">
+
+        </div>
+    </div>
+</div>
 
 <div class="row  common" style="margin-left:0.3em;">
     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 shadows sections">
