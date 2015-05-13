@@ -7,14 +7,26 @@ Template Name: My Custom Page
 <?php get_header(); ?>
 
 <?php
-    //$id = $_REQUEST['id'];
-    //$query="Select * from wp_property where id='".$id."'";
+    /*
+    $id = $_REQUEST['id'];
+    $query="Select * from wp_property where id='".$id."'";
+    $results = array_pop($wpdb->get_results($query));
     $page_id=$_REQUEST['page_id'];
-    $query="Select * from wp_posts where id='".$page_id."'";
+    echo $page_id;
+    */
+    $page_id=$_REQUEST['page_id'];
+    $query="Select * from wp_property where postID='".$page_id."'";
     $results = array_pop($wpdb->get_results($query));
     var_dump($results);
-    //$page_id=$_REQUEST['page_id'];
-    //echo $page_id;
+    $id = $results->id;
+
+    /*
+        Have a look at wp_postmeta
+        Last few rows
+        Hint: 136 meta_key = _menu_item_object_id and meta_value= 47.
+
+
+    */
 ?>
 <div class="container" id="container">
 
