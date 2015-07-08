@@ -242,6 +242,7 @@ $accesspress_ray_show_blog_number = (isset($accesspress_ray_settings['show_blog_
 				</div>
 				<div class="row">
 				<?php
+				/*
 					$results = array_pop($wpdb->get_results("Select count(*) as counter from wp_property"));
 					$result = array_pop($wpdb->get_results("Select * from wp_property"));
 					if($results->counter=="1"){
@@ -332,7 +333,43 @@ $accesspress_ray_show_blog_number = (isset($accesspress_ray_settings['show_blog_
 							} ?>
 
 							<?php
+
 						}
+						*/
+						$result = array_pop($wpdb->get_results("Select * from wp_property where name like '%Bronte Bliss Beach House%'"));
+						$picture=json_decode($result->photo_name);
+						?>
+						<div class="features-adjust col-md-12 col-md-offset-2 col-sm-12 col-sm-offset-2 col-xs-12 col-xs-offset-2" id="features-adjust1">
+							<h2 class="headColor" style="margin-left:3em; margin-top:-0.5em; margin-bottom:1em;">Featured Property</h2>
+							<div id="featured-post-1" class="featured-post">
+								<figure class="featured-image">
+
+								<img class="imagescaler" src="<?php echo $result->photo_url.$picture[0]; ?>">
+
+								</figure>
+								<div class="featured-content">
+									<h2 class="featured-title"><form role="form" method="post" action="<?php echo $result->url ?>">
+										<input type="hidden" name="id" value="<?php echo $result->id ?>">
+										<button type="submit" name="submit" id="submit" class="makelink"><?php echo $result->name; ?></button>
+									</form></a></h2>
+									<div class="summary">
+
+										<?php echo $result->overview;?>
+
+									</div>
+									<div>
+										<strong>. . .</strong>
+									</div>
+									<form role="form" method="post" action="<?php echo $result->url ?>">
+										<input type="hidden" name="id" value="<?php echo $result->id ?>">
+										<button type="submit" name="submit" id="submit" class="view-more">Read More</button>
+									</form>
+								</div>
+							</div>
+
+							</div>
+						</div>
+					<?php
 					?>
 
 				</div>
