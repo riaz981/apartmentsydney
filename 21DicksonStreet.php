@@ -17,7 +17,7 @@ Template Name: 21DicksonStreet
     $page_id=$_REQUEST['page_id'];
     $query="Select * from wp_property where postID='".$page_id."'";
     $results = array_pop($wpdb->get_results($query));
-    var_dump($results);
+    //var_dump($results);
     $id = $results->id;
 ?>
 <div class="container" id="container">
