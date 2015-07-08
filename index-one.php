@@ -336,7 +336,7 @@ $accesspress_ray_show_blog_number = (isset($accesspress_ray_settings['show_blog_
 
 						}
 						*/
-						$result = array_pop($wpdb->get_results("Select * from wp_property where name like '%Bronte Bliss Beach House%'"));
+						$result = array_pop($wpdb->get_results("Select * from wp_property where name like '%Bronte Bliss%'"));
 						$picture=json_decode($result->photo_name);
 						?>
 						<div class="features-adjust col-md-12 col-md-offset-2 col-sm-12 col-sm-offset-2 col-xs-12 col-xs-offset-2" id="features-adjust1">
@@ -369,9 +369,6 @@ $accesspress_ray_show_blog_number = (isset($accesspress_ray_settings['show_blog_
 
 							</div>
 						</div>
-					<?php
-					?>
-
 				</div>
 			</div>
 
