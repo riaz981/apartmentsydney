@@ -51,6 +51,7 @@ Template Name: 21DicksonStreet
     $icon = json_decode($results->icon);
     $rates = json_decode($results->rates);
     $map = json_decode($results->map);
+    $address = json_decode($results->address);
 ?>
 
 <!-- This section is for icons home, users, bedrooms and beds -->
@@ -58,61 +59,73 @@ Template Name: 21DicksonStreet
     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 shadows sections">
         <div style="margin-top:0.2em;">
             <h3 class="headColor"><?php echo $results->name; ?>,</h3>
-            <h4><?php echo $results->address; ?></h4>
-            <div class="col-lg-2 col-lg-offset-1 col-md-2 col-sm-2 col-xs-2">
-                <img src="<?php echo get_template_directory_uri(); ?>/images/demo/home.png" align="middle"/><h5><?php echo $icon->typeProperty; ?></h5>
-            </div>
-            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
-                <img src="<?php echo get_template_directory_uri(); ?>/images/demo/users.png" align="middle"/><h5><?php echo $icon->guestNumber; ?> Guest(s)</h5>
-            </div>
-            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
-                <img src="<?php echo get_template_directory_uri(); ?>/images/demo/bedroom.png" align="middle"/><h5><?php echo $icon->bedroomNumber; ?> Bedroom(s)</h5>
-            </div>
-            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
-                <img src="<?php echo get_template_directory_uri(); ?>/images/demo/bed.png" align="middle"/><h5><?php echo $icon->bedsNumber; ?> Bed(s)</h5>
-            </div>
-            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
-                <img src="<?php echo get_template_directory_uri(); ?>/images/demo/minimumstay.png" align="middle"/><h5><?php echo $results->minimumStay; ?> Nights Min.</h5>
-            </div>
-        </div>
-    </div>
+            <h4><?php  if($address->street!=""){
+                        echo $address->street.",<br>";
+                    }
+                    if($address->suburb!=""){
+                        echo $address->suburb.",<br>";
+                    }
+                    if($address->state!=""){
+                        echo $address->state.",<br>";
+                    }
+                    if($address->country!=""){
+                        echo $address->country.".";
+                    }
+            ?></h4>
+<div class="col-lg-2 col-lg-offset-1 col-md-2 col-sm-2 col-xs-2">
+    <img src="<?php echo get_template_directory_uri(); ?>/images/demo/home.png" align="middle"/><h5><?php echo $icon->typeProperty; ?></h5>
+</div>
+<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+    <img src="<?php echo get_template_directory_uri(); ?>/images/demo/users.png" align="middle"/><h5><?php echo $icon->guestNumber; ?> Guest(s)</h5>
+</div>
+<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+    <img src="<?php echo get_template_directory_uri(); ?>/images/demo/bedroom.png" align="middle"/><h5><?php echo $icon->bedroomNumber; ?> Bedroom(s)</h5>
+</div>
+<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+    <img src="<?php echo get_template_directory_uri(); ?>/images/demo/bed.png" align="middle"/><h5><?php echo $icon->bedsNumber; ?> Bed(s)</h5>
+</div>
+<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+    <img src="<?php echo get_template_directory_uri(); ?>/images/demo/minimumstay.png" align="middle"/><h5><?php echo $results->minimumStay; ?> Nights Min.</h5>
+</div>
+</div>
+</div>
 </div>
 
 <!--Need to remove style="margin-left:0.3em; once we have a left column -->
 <div class="row  common" style="margin-left:0.3em;">
-    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 shadows sections">
-        <h4 class="headColor">Rates</h4>
-        <div class="table-responsive">
-            <table class="table table-bordered table-hover">
-                <tbody>
-                    <tr>
-                        <th class="text-nowrap col-md-3" scope="row">Nightly Price</th>
-                        <td>A$<?php echo $rates->nightlyRate; ?> (minimum stay of <?php echo $results->minimumStay; ?> nights)</td>
-                    </tr>
-                    <tr>
-                        <th class="text-nowrap col-md-3" scope="row">Weekly Price</th>
-                        <td>A$<?php echo $rates->weeklyRate; ?></td>
-                    </tr>
-                    <tr>
-                        <th class="text-nowrap col-md-3" scope="row">Monthly Price</th>
-                        <td>
-                            A$<?php echo $rates->monthlyRate; ?>
-                        </td>
-                    </tr>
-                    <tr>
-                        <th class="text-nowrap col-md-3" scope="row">Cleaning Fee</th>
-                        <td>
-                            A$<?php echo $rates->cleaningRate; ?>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
+<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 shadows sections">
+<h4 class="headColor">Rates</h4>
+<div class="table-responsive">
+<table class="table table-bordered table-hover">
+    <tbody>
+        <tr>
+            <th class="text-nowrap col-md-3" scope="row">Nightly Price</th>
+            <td>A$<?php echo $rates->nightlyRate; ?> (minimum stay of <?php echo $results->minimumStay; ?> nights)</td>
+        </tr>
+        <tr>
+            <th class="text-nowrap col-md-3" scope="row">Weekly Price</th>
+            <td>A$<?php echo $rates->weeklyRate; ?></td>
+        </tr>
+        <tr>
+            <th class="text-nowrap col-md-3" scope="row">Monthly Price</th>
+            <td>
+                A$<?php echo $rates->monthlyRate; ?>
+            </td>
+        </tr>
+        <tr>
+            <th class="text-nowrap col-md-3" scope="row">Cleaning Fee</th>
+            <td>
+                A$<?php echo $rates->cleaningRate; ?>
+            </td>
+        </tr>
+    </tbody>
+</table>
+</div>
 
-    <div class="col-lg-12" style="margin-bottom:0.5em;">
-        <button type="button" class="btn btn-primary" value="Book">Book</button>
-        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal" value="Enquire">Enquire</button>
-    </div>
+<div class="col-lg-12" style="margin-bottom:0.5em;">
+    <button type="button" class="btn btn-primary" value="Book">Book</button>
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal" value="Enquire">Enquire</button>
+</div>
 
 <!-- Modal -->
 <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
@@ -139,6 +152,7 @@ Template Name: 21DicksonStreet
                         <textarea style="width:100%" class="form-control" id="comment" name="comment" placeholder="Enter your query"></textarea>
                     </div>
             </div>
+
             <div class="modal-footer">
                 <button type="submit" name="submit" id="submit" class="btn btn-primary">Submit</button>
                 <button type="reset" class="btn btn-primary">Reset</button>
@@ -210,14 +224,6 @@ Template Name: 21DicksonStreet
     </div> <!-- Sprecification div closes -->
 </div> <!-- Container div for specification closes -->
 
-<div class="row common" style="margin-left:0.3em;">
-    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 shadows sections">
-        <div class="table-responsive">
-
-        </div>
-    </div>
-</div>
-
 <div class="row  common" style="margin-left:0.3em;">
     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 shadows sections">
         <div class="table-responsive">
@@ -267,24 +273,25 @@ Template Name: 21DicksonStreet
 </div>
 
 <script>
-    function initialize() {
-        var latitude = undefined;
-        var longitude = undefined;
-        latitude = document.getElementById("latitude").value;
-        longitude = document.getElementById("longitude").value;
-        var mapCanvas = document.getElementById('ap-map-canvas');
-        var mapOptions = {
-            center: new google.maps.LatLng(latitude, longitude),
-            zoom: 15,
-            mapTypeId: google.maps.MapTypeId.ROADMAP
-        }
-        var map = new google.maps.Map(mapCanvas, mapOptions);
-        var marker = new google.maps.Marker({
-            position: new google.maps.LatLng(latitude, longitude),
-            map: map
-        });
+function initialize() {
+    var latitude = undefined;
+    var longitude = undefined;
+    latitude = document.getElementById("latitude").value;
+    longitude = document.getElementById("longitude").value;
+    var mapCanvas = document.getElementById('ap-map-canvas');
+    var mapOptions = {
+        center: new google.maps.LatLng(latitude, longitude),
+        zoom: 15,
+        mapTypeId: google.maps.MapTypeId.ROADMAP
     }
-    google.maps.event.addDomListener(window, 'load', initialize);
+    var map = new google.maps.Map(mapCanvas, mapOptions);
+    var marker = new google.maps.Marker({
+        position: new google.maps.LatLng(latitude, longitude),
+        map: map
+    });
+}
+
+google.maps.event.addDomListener(window, 'load', initialize);
 </script>
 
 
