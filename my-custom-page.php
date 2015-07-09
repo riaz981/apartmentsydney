@@ -17,7 +17,6 @@ Template Name: My Custom Page
     $page_id=$_REQUEST['page_id'];
     $query="Select * from wp_property where postID='".$page_id."'";
     $results = array_pop($wpdb->get_results($query));
-    var_dump($results);
     $id = $results->id;
 
     /*
@@ -59,6 +58,7 @@ Template Name: My Custom Page
     $icon = json_decode($results->icon);
     $rates = json_decode($results->rates);
     $map = json_decode($results->map);
+    $address = json_decode($results->address);
 ?>
 
 <!-- This section is for icons home, users, bedrooms and beds -->
@@ -66,7 +66,19 @@ Template Name: My Custom Page
     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 shadows sections">
         <div style="margin-top:0.2em;">
             <h3 class="headColor"><?php echo $results->name; ?>,</h3>
-            <h4><?php echo $results->address; ?></h4>
+            <h4><?php  if($address->street!=""){
+                        echo $address->street.",<br>";
+                    }
+                    if($address->suburb!=""){
+                        echo $address->suburb.",<br>";
+                    }
+                    if($address->state!=""){
+                        echo $address->state.",<br>";
+                    }
+                    if($address->country!=""){
+                        echo $address->country.".";
+                    }
+            ?></h4>
             <div class="col-lg-2 col-lg-offset-1 col-md-2 col-sm-2 col-xs-2">
                 <img src="<?php echo get_template_directory_uri(); ?>/images/demo/home.png" align="middle"/><h5><?php echo $icon->typeProperty; ?></h5>
             </div>
