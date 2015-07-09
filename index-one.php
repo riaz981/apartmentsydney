@@ -475,7 +475,7 @@ $accesspress_ray_show_blog_number = (isset($accesspress_ray_settings['show_blog_
 						        		<img src="<?php echo get_template_directory_uri(); ?>/images/demo/David-Soriano.jpg">
 						        		</div>
 
-						        		<div class="testimonial-excerpt">Thank you very much the support team AccessPress Ray for service, are really wonderful in their care and in the resolution of the problem.</div>
+						        		<div class="testimonial-excerpt">Thank you very much the support team Apartment Sydney for service, are really wonderful in their care and provided excellent customer service!</div>
 						        	</div>
 									<div class="testimoinal-client-name">David Soriano</div>
 								</div>
