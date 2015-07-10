@@ -32,10 +32,10 @@ $accesspress_ray_settings = get_option( 'accesspress_ray_options', $accesspress_
         <div class="ak-container">
 
             <div class="header-wrap clearfix <?php do_action( 'accesspress_ray_logo_alignment' ); ?>">
-                <div class="site-branding main-logo">
+                <div class="site-branding main-logo"  style="overflow: hidden;position: relative;">
                     <a href="<?php echo esc_url( home_url( '/' ) ); ?>">
                     <?php if ( get_header_image() ) { ?>
-                        <img src="<?php header_image(); ?>" alt="<?php bloginfo('name') ?>">
+                        <div><img src="<?php header_image(); ?>" alt="<?php bloginfo('name') ?>"></div>
                     <?php }else{ ?>
                         <h1><?php echo bloginfo('title'); ?></h1>
                         <div class="tagline"><?php echo bloginfo('description'); ?></div>
