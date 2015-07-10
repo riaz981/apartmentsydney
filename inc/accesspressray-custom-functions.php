@@ -506,7 +506,7 @@ add_action( 'wp_enqueue_scripts', 'accesspress_ray_scripts' );
 							<h1 class="caption-title">Apartments Sydney</h1><br />
 							<h2 class="caption-description">Book with us for the best deal on the apartment! Follow links below for more details!</h2>
 							<br>
-							<a href="#">Read More</a>
+							<a href="http://apartmentclub.localhost/?page_id=37">Read More</a>
 						</div>
 					</div>
                     <?php  endif; ?>
