@@ -83,13 +83,11 @@ $accesspress_ray_show_blog_number = (isset($accesspress_ray_settings['show_blog_
 							</div>
 							<?php } ?>
 
-
 							<div class="featured-content">
 								<h2 class="featured-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
 								<p><?php echo accesspress_ray_excerpt( get_the_content() , 260 ) ?></p>
 								<?php if(!empty($accesspress_ray_settings['featured_post_readmore'])){?>
-								<a href="<?php the_permalink(); ?>" class="view-more"><?php echo $accesspress_ray_settings['featured_post_readmore']; ?></a>
-								<?php } ?>
+								<a href="<?php the_permalink(); ?>" class="view-more"><?php echo $accesspress_ray_settings['featured_post_readmore']; ?></a>								<?php } ?>
 							</div>
 						<?php endwhile;
 						wp_reset_postdata(); ?>
